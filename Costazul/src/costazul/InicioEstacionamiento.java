@@ -14,8 +14,21 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     /**
      * Creates new form InicioEstacionamiento
      */
-    public InicioEstacionamiento() {
+    int Cedula;
+    String Nombre;
+    String Apellido;
+    String Marca;
+    String Matricula;
+    String Color;
+    String Vehiculo;
+    public String Seccion;
+    
+    public Lista listaVehiculos=new Lista();
+    
+    private Inicio inicio;
+    public InicioEstacionamiento(Inicio inicio) {
         initComponents();
+        this.inicio=inicio;
     }
 
     /**
@@ -43,30 +56,49 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         TFColor = new javax.swing.JTextField();
         LblColor = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
-        jRadioButton3 = new javax.swing.JRadioButton();
+        RBSmall = new javax.swing.JRadioButton();
+        RBBann = new javax.swing.JRadioButton();
+        RBBike = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
+        BtnLugar = new javax.swing.JButton();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
-        setMinimumSize(new java.awt.Dimension(854, 500));
-        setPreferredSize(new java.awt.Dimension(854, 500));
+        setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
 
-        LblTitulo.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        LblTitulo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         LblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LblTitulo.setText("Registro de Estacionamiento");
         LblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
+        TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        LblCedula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblCedula.setText("Cédula");
 
+        LblCedula1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblCedula1.setText("Nombre");
 
+        TFNombre.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        LblApellido.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblApellido.setText("Apellido");
 
+        TFApellido.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMarca.setText("Marca");
 
+        TFMarca.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        LblMatricula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMatricula.setText("Matrícula");
 
+        TFMatricula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        TFColor.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+
+        LblColor.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblColor.setText("Color");
 
         javax.swing.GroupLayout PDatosLayout = new javax.swing.GroupLayout(PDatos);
@@ -74,22 +106,32 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatosLayout.setHorizontalGroup(
             PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PDatosLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LblCedula1)
-                    .addComponent(LblCedula)
-                    .addComponent(LblApellido)
-                    .addComponent(LblMarca)
-                    .addComponent(LblMatricula)
-                    .addComponent(LblColor))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFColor, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
-                    .addComponent(TFMatricula)
-                    .addComponent(TFMarca)
-                    .addComponent(TFApellido)
-                    .addComponent(TFCedula)
-                    .addComponent(TFNombre))
+                    .addGroup(PDatosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(PDatosLayout.createSequentialGroup()
+                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LblCedula)
+                                    .addComponent(LblCedula1))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(TFNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                                    .addComponent(TFCedula)))
+                            .addGroup(PDatosLayout.createSequentialGroup()
+                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(LblApellido)
+                                    .addComponent(LblMarca)
+                                    .addComponent(LblMatricula))
+                                .addGap(46, 46, 46)
+                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(TFApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
+                                    .addComponent(TFMarca, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(TFMatricula, javax.swing.GroupLayout.Alignment.TRAILING)))))
+                    .addGroup(PDatosLayout.createSequentialGroup()
+                        .addComponent(LblColor)
+                        .addGap(115, 115, 115)
+                        .addComponent(TFColor)))
                 .addContainerGap())
         );
         PDatosLayout.setVerticalGroup(
@@ -99,43 +141,47 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(TFCedula)
                     .addComponent(LblCedula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                .addGap(89, 89, 89)
                 .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFNombre)
-                    .addComponent(LblCedula1, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFApellido)
-                    .addComponent(LblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFMarca)
-                    .addComponent(LblMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFMatricula)
-                    .addComponent(LblMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFColor)
-                    .addComponent(LblColor, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(LblCedula1, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
+                    .addComponent(TFNombre))
+                .addGap(95, 95, 95)
+                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(LblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(92, 92, 92)
+                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LblMarca)
+                    .addComponent(TFMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LblMatricula)
+                    .addComponent(TFMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(73, 73, 73)
+                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LblColor, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFColor, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23))
         );
 
-        Grupo1.add(jRadioButton1);
-        jRadioButton1.setText("Pequeño");
-        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+        Grupo1.add(RBSmall);
+        RBSmall.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBSmall.setText("Pequeño");
+        RBSmall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButton1ActionPerformed(evt);
+                RBSmallActionPerformed(evt);
             }
         });
 
-        Grupo1.add(jRadioButton2);
-        jRadioButton2.setText("Camioneta");
+        Grupo1.add(RBBann);
+        RBBann.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBBann.setText("Camioneta");
 
-        Grupo1.add(jRadioButton3);
-        jRadioButton3.setText("Moto");
+        Grupo1.add(RBBike);
+        RBBike.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBBike.setText("Moto");
 
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TIPO DE VEHÍCULO");
 
@@ -143,14 +189,14 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jRadioButton2)
-                    .addComponent(jRadioButton1)
-                    .addComponent(jRadioButton3))
-                .addContainerGap(77, Short.MAX_VALUE))
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(RBBike, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RBBann, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(RBSmall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(504, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -158,52 +204,96 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 .addGap(19, 19, 19)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
-                .addComponent(jRadioButton1)
+                .addComponent(RBSmall, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(RBBann, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(RBBike, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(245, 245, 245))
         );
+
+        BtnLugar.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnLugar.setText("SELECCIONAR LUGAR");
+        BtnLugar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnLugarMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(PDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 573, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(LblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(PDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 425, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(BtnLugar, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(53, 53, 53))))
+            .addComponent(LblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(40, 40, 40)
                 .addComponent(LblTitulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(120, 120, 120)
-                        .addComponent(PDatos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(62, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(52, 52, 52))))
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BtnLugar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(62, 62, 62))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(PDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(42, 42, 42))))
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+    public void Esta(){
+        Estacionamiento Esta = new Estacionamiento(this);
+        inicio.PanelSetter(Esta);
+    }
+    public void addvehicle(){
+        listaVehiculos.agregarElemento(Cedula, Nombre, Apellido, Marca, Matricula, Color, Vehiculo, Seccion);
+        listaVehiculos.mostrar();
+    }
+    
+    
+    
+    
+    
+    private void RBSmallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBSmallActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jRadioButton1ActionPerformed
+    }//GEN-LAST:event_RBSmallActionPerformed
+
+    private void BtnLugarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnLugarMouseClicked
+        Cedula=Integer.parseInt(TFCedula.getText());
+        Nombre=TFNombre.getText();
+        Apellido=TFApellido.getText();
+        Marca=TFMarca.getText();
+        Matricula=TFMatricula.getText();
+        Color=TFColor.getText();
+        if(RBSmall.isSelected()==true){
+            Vehiculo="Pequeño";
+        }else if(RBBann.isSelected()==true){
+            Vehiculo="Camioneta";
+        }else if(RBBike.isSelected()==true){
+            Vehiculo="Moto";
+        }else{
+            Vehiculo="Pequeño";
+        }
+        Esta();
+    }//GEN-LAST:event_BtnLugarMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnLugar;
     private javax.swing.ButtonGroup Grupo1;
     private javax.swing.JLabel LblApellido;
     private javax.swing.JLabel LblCedula;
@@ -213,6 +303,9 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     private javax.swing.JLabel LblMatricula;
     private javax.swing.JLabel LblTitulo;
     private javax.swing.JPanel PDatos;
+    private javax.swing.JRadioButton RBBann;
+    private javax.swing.JRadioButton RBBike;
+    private javax.swing.JRadioButton RBSmall;
     private javax.swing.JTextField TFApellido;
     private javax.swing.JTextField TFCedula;
     private javax.swing.JTextField TFColor;
@@ -221,8 +314,5 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     private javax.swing.JTextField TFNombre;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
-    private javax.swing.JRadioButton jRadioButton3;
     // End of variables declaration//GEN-END:variables
 }

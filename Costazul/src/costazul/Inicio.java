@@ -14,14 +14,15 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
         this.setExtendedState(this.MAXIMIZED_BOTH);    
         //this.setUndecorated(true);
-        InicioEstacionamiento esta = new InicioEstacionamiento();
-        this.PanelSetter(esta);
+        InicioEsta();
+    }
+    public void InicioEsta(){
+        InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
+        PanelSetter(inicioEsta);
     }
     
-    
-    
     public void PanelSetter(JPanel panel){
-        panel.setSize(854, 480);
+        panel.setSize(1920, 1080);
         panel.setLocation(0, 0);
         PanelContenido.removeAll();
         PanelContenido.add(panel, BorderLayout.CENTER);
@@ -62,12 +63,11 @@ public class Inicio extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1920, 1080));
-        setMinimumSize(new java.awt.Dimension(854, 500));
-        setPreferredSize(new java.awt.Dimension(854, 500));
+        setMinimumSize(new java.awt.Dimension(1920, 1080));
 
         PanelContenido.setMaximumSize(new java.awt.Dimension(1920, 1080));
-        PanelContenido.setMinimumSize(new java.awt.Dimension(854, 500));
-        PanelContenido.setPreferredSize(new java.awt.Dimension(854, 500));
+        PanelContenido.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        PanelContenido.setPreferredSize(new java.awt.Dimension(1920, 1080));
         PanelContenido.setLayout(new javax.swing.BoxLayout(PanelContenido, javax.swing.BoxLayout.LINE_AXIS));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
