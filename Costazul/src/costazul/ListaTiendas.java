@@ -36,6 +36,10 @@ public class ListaTiendas {
              }
              actual.siguiente = nuevoElemento;
          }
+         System.out.println(Tienda);
+         System.out.println(Encargado);
+         System.out.println(Rubro);
+         System.out.println("-----------------------------------------------------------------");
      }
      public void mostrar()
      {

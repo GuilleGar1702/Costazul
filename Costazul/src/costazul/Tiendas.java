@@ -19,6 +19,7 @@ import java.util.List;
  */
 public class Tiendas {
     ListaTiendas listaTiendas= new ListaTiendas();
+    
     public void cargarTiendas() 
         throws IOException{
         Path ruta= Paths.get("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\Tiendas.txt");
@@ -26,8 +27,9 @@ public class Tiendas {
         String[] xd= new String[listaPajuaTiendas.size()];
         listaPajuaTiendas.toArray(xd);
         for (String x:xd){
-            System.out.println(x);
+            String[] atributos = x.split("-");
+            //atributos[0] = atributos[0].replace("Tienda: ", "");
+            listaTiendas.agregarElemento(atributos[0], atributos[1], atributos[2]);
         }
     }
-    
 }

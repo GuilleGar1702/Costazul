@@ -2,6 +2,8 @@ package costazul;
 
 import java.awt.BorderLayout;
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -13,18 +15,22 @@ public class Inicio extends javax.swing.JFrame {
 
     public Inicio() {
         initComponents();
-        this.setExtendedState(this.MAXIMIZED_BOTH);    
-        //this.setUndecorated(true);
+        this.setExtendedState(this.MAXIMIZED_BOTH);
         InicioEsta();
+        IniciarTiendas();
     }
     public void InicioEsta(){
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
         PanelSetter(inicioEsta);
     }
     
-    public void IniciarTiendas() throws IOException{
-        Tiendas tiendas = new Tiendas();
-        tiendas.cargarTiendas();
+    public void IniciarTiendas(){
+        try {
+            Tiendas tiendas = new Tiendas();
+            tiendas.cargarTiendas();
+        } catch (IOException ex) {
+            Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
     public void PanelSetter(JPanel panel){

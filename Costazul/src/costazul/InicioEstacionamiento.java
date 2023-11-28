@@ -261,15 +261,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Estacionamiento Esta = new Estacionamiento(this);
         inicio.PanelSetter(Esta);
     }
-    public void addvehicle() throws IOException{
+    public void addvehicle(){
         listaVehiculos.agregarElemento(Cedula, Nombre, Apellido, Marca, Matricula, Color, Vehiculo, Seccion);
         listaVehiculos.mostrar();
-        inicio.IniciarTiendas();
+        //inicio.IniciarTiendas();
     }
-    
-    
-    
-    
     
     private void RBSmallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBSmallActionPerformed
         // TODO add your handling code here:
