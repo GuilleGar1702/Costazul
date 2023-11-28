@@ -1,0 +1,141 @@
+Tienda: Boutique de Moda, Encargado: María González, Producto: Ropa de moda
+Tienda: Librería El Quijote, Encargado: Juan Pérez, Producto: Libros
+Tienda: Joyería Brillante, Encargado: Rosa Martínez, Producto: Joyas
+Tienda: Tienda de Electrónica, Encargado: Carlos Rodríguez, Producto: Electrónicos
+Tienda: Panadería Delicias, Encargado: Ana García, Producto: Pan y pasteles
+Tienda: Tienda de Muebles, Encargado: Pedro Gómez, Producto: Muebles
+Tienda: Tienda de Deportes, Encargado: José López, Producto: Artículos deportivos
+Tienda: Tienda de Música, Encargado: Laura Torres, Producto: Instrumentos musicales
+Tienda: Tienda de Mascotas, Encargado: David Ramírez, Producto: Alimentos y accesorios para mascotas
+Tienda: Tienda de Arte, Encargado: Patricia Morales, Producto: Pinturas y esculturas …
+Tienda: Tienda de Jardinería, Encargado: Antonio Ruiz, Producto: Plantas y herramientas de jardinería
+Tienda: Tienda de Bicicletas, Encargado: Carmen Sánchez, Producto: Bicicletas y accesorios
+Tienda: Tienda de Zapatos, Encargado: Roberto Díaz, Producto: Zapatos para hombres y mujeres
+Tienda: Tienda de Juguetes, Encargado: Teresa Castro, Producto: Juguetes para niños
+Tienda: Tienda de Vinos, Encargado: Francisco Romero, Producto: Vinos nacionales e internacionales
+Tienda: Tienda de Cómics, Encargado: Isabel Peña, Producto: Cómics y novelas gráficas
+Tienda: Tienda de Fotografía, Encargado: Luis Navarro, Producto: Cámaras y accesorios de fotografía
+Tienda: Tienda de Cosméticos, Encargado: Beatriz Torres, Producto: Maquillaje y productos de belleza
+Tienda: Tienda de Instrumentos, Encargado: Rafael Medina, Producto: Instrumentos musicales
+Tienda: Tienda de Antigüedades, Encargado: Dolores Guzmán, Producto: Antigüedades y coleccionables
+Tienda: Tienda de Música, Encargado: Ricardo Delgado, Producto: Discos de vinilo y CDs
+Tienda: Tienda de Perfumes, Encargado: Alejandro Aguilar, Producto: Perfumes y fragancias
+Tienda: Tienda de Ropa Infantil, Encargado: Gabriela Cordero, Producto: Ropa para niños
+Tienda: Tienda de Materiales de Construcción, Encargado: Fernando Mendoza, Producto: Materiales de construcción
+Tienda: Tienda de Productos Naturales, Encargado: Claudia Ríos, Producto: Productos naturales y orgánicos
+Tienda: Tienda de Artículos de Cocina, Encargado: Sergio Castillo, Producto: Utensilios y electrodomésticos de cocina
+Tienda: Tienda de Ropa Deportiva, Encargado: Adriana Guerra, Producto: Ropa y accesorios deportivos
+Tienda: Tienda de Artículos de Pesca, Encargado: Ricardo Paredes, Producto: Artículos de pesca
+Tienda: Tienda de Productos Veganos, Encargado: Patricia Canto, Producto: Alimentos y productos veganos
+Tienda: Tienda de Artículos de Camping, Encargado: Roberto Solís, Producto: Artículos de camping y senderismo
+Tienda: Tienda de Artículos de Belleza, Encargado: Lourdes Peña, Producto: Productos de belleza y cuidado personal
+Tienda: Tienda de Lencería, Encargado: Carmen Vargas, Producto: Lencería
+Tienda: Tienda de Artículos de Oficina, Encargado: Alberto Mora, Producto: Artículos de oficina
+Tienda: Tienda de Artículos de Fiesta, Encargado: Susana Ponce, Producto: Artículos de fiesta
+Tienda: Tienda de Artículos de Baño, Encargado: Jorge Soto, Producto: Artículos de baño
+Tienda: Tienda de Artículos de Bricolaje, Encargado: Teresa Méndez, Producto: Artículos de bricolaje
+Tienda: Tienda de Artículos de Jardín, Encargado: Guillermo Núñez, Producto: Artículos de jardín
+Tienda: Tienda de Artículos de Cocina, Encargado: Rosa Cervantes, Producto: Artículos de cocina
+Tienda: Tienda de Artículos de Decoración, Encargado: Francisco Rojas, Producto: Artículos de decoración
+Tienda: Tienda de Artículos de Limpieza, Encargado: Patricia Guzmán, Producto: Artículos de limpieza
+Tienda: Tienda de Artículos de Mascotas, Encargado: Roberto Aguilar, Producto: Artículos de mascotas
+Tienda: Tienda de Artículos de Papelería, Encargado: Gabriela Mendoza, Producto: Artículos de papelería
+Tienda: Tienda de Artículos de Pesca, Encargado: Sergio Ríos, Producto: Artículos de pesca
+Tienda: Tienda de Artículos de Fotografía, Encargado: Lourdes Castillo, Producto: Artículos de fotografía
+Tienda: Tienda de Artículos de Belleza, Encargado: Ricardo Solís, Producto: Artículos de belleza
+Tienda: Tienda de Artículos de Camping, Encargado: Alejandro Peña, Producto: Artículos de camping
+Tienda: Tienda de Artículos de Deportes, Encargado: Claudia Cordero, Producto: Artículos de deportes
+Tienda: Tienda de Artículos de Música, Encargado: Fernando Paredes, Producto: Artículos de música
+Tienda: Tienda de Artículos de Viaje, Encargado: Teresa Canto, Producto: Artículos de viaje
+Tienda: Tienda de Artículos de Yoga, Encargado: Roberto Delgado, Producto: Artículos de yoga
+Tienda: Tienda de Artículos de Meditación, Encargado: Patricia Ruiz, Producto: Artículos de meditación
+Tienda: La Casa del Pan, Encargado: Juan Pérez, Producto/Servicio: Panadería y pastelería
+Tienda: El Jardín de las Flores, Encargado: María González, Producto/Servicio: Venta de flores y plantas
+Tienda: El Rincón del Libro, Encargado: Carlos Rodríguez, Producto/Servicio: Librería y papelería
+Tienda: Sabores del Mundo, Encargado: Ana Martínez, Producto/Servicio: Alimentos internacionales
+Tienda: La Boutique de la Moda, Encargado: Pedro Gómez, Producto/Servicio: Ropa y accesorios de moda
+Tienda: El Taller del Arte, Encargado: Carmen Morales, Producto/Servicio: Materiales de arte y clases de pintura
+Tienda: La Joyería Brillante, Encargado: Luis Guzmán, Producto/Servicio: Joyería fina y relojes
+Tienda: El Mercado de la Fruta, Encargado: Rosa Díaz, Producto/Servicio: Frutas y verduras frescas
+Tienda: La Tienda de los Juguetes, Encargado: José Ramírez, Producto/Servicio: Juguetes y juegos para niños
+Tienda: El Mundo de la Electrónica, Encargado: Teresa Herrera, Producto/Servicio: Electrónica y accesorios
+Tienda: El Bazar de las Especias, Encargado: Antonio Méndez, Producto/Servicio: Especias y condimentos
+Tienda: La Tienda del Deporte, Encargado: Patricia Torres, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo del Vino, Encargado: Francisco Castro, Producto/Servicio: Vinos y licores
+Tienda: La Casa de la Música, Encargado: Laura Ortega, Producto/Servicio: Instrumentos musicales y clases de música
+Tienda: El Rincón del Gourmet, Encargado: Sergio Peña, Producto/Servicio: Alimentos gourmet y delicatessen
+Tienda: La Tienda de los Sueños, Encargado: Isabel Ríos, Producto/Servicio: Colchones y ropa de cama
+Tienda: El Mundo de la Belleza, Encargado: Alejandro Cordero, Producto/Servicio: Cosméticos y productos de belleza
+Tienda: La Tienda del Hogar, Encargado: Teresa Aguirre, Producto/Servicio: Muebles y decoración para el hogar
+Tienda: El Rincón de la Salud, Encargado: Guillermo Mendoza, Producto/Servicio: Productos naturales y suplementos
+Tienda: La Boutique del Bebé, Encargado: Carmen Paredes, Producto/Servicio: Ropa y accesorios para bebés
+Tienda: El Mundo de la Fotografía, Encargado: Roberto Silva, Producto/Servicio: Cámaras y accesorios de fotografía
+Tienda: La Tienda del Viajero, Encargado: Susana Navarro, Producto/Servicio: Artículos de viaje y equipaje
+Tienda: El Rincón del Café, Encargado: Fernando Guerra, Producto/Servicio: Café y tés
+Tienda: La Casa de la Tecnología, Encargado: Beatriz Romero, Producto/Servicio: Electrónica y tecnología
+Tienda: El Mundo de los Videojuegos, Encargado: Carlos Vargas, Producto/Servicio: Videojuegos y consolas
+Tienda: La Tienda de las Mascotas, Encargado: Rosa Soto, Producto/Servicio: Alimentos y accesorios para mascotas
+Tienda: El Rincón de la Joyería, Encargado: Juan Delgado, Producto/Servicio: Joyería y relojes
+Tienda: La Casa de los Perfumes, Encargado: Patricia Cisneros, Producto/Servicio: Perfumes y fragancias
+Tienda: El Mundo de la Moda, Encargado: Sergio Ponce, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Tienda del Arte, Encargado: Isabel Solís, Producto/Servicio: Materiales de arte y clases de pintura
+Tienda: El Mundo de los Dulces, Encargado: Alberto Rangel, Producto/Servicio: Dulces y golosinas
+Tienda: La Casa de los Muebles, Encargado: Gabriela Mora, Producto/Servicio: Muebles para el hogar
+Tienda: El Rincón del Cine, Encargado: Ricardo Vera, Producto/Servicio: Películas y series en DVD
+Tienda: La Tienda de los Deportes, Encargado: Claudia Páez, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo de la Cocina, Encargado: Ernesto Parra, Producto/Servicio: Utensilios de cocina
+Tienda: La Casa de los Regalos, Encargado: Lourdes Sánchez, Producto/Servicio: Regalos y souvenirs
+Tienda: El Rincón de la Belleza, Encargado: Gustavo Cárdenas, Producto/Servicio: Productos de belleza y cuidado personal
+Tienda: La Tienda de los Libros, Encargado: Mariana Peña, Producto/Servicio: Libros y revistas
+Tienda: El Mundo de la Moda, Encargado: Alejandro Ríos, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa de los Juguetes, Encargado: Patricia Méndez, Producto/Servicio: Juguetes y juegos para niños
+Tienda: El Rincón de la Música, Encargado: Roberto Castro, Producto/Servicio: Instrumentos musicales y discos
+Tienda: La Tienda de los Zapatos, Encargado: Susana Ortega, Producto/Servicio: Zapatos y calzado
+Tienda: El Mundo de la Electrónica, Encargado: Fernando Peña, Producto/Servicio: Electrónica y tecnología
+Tienda: La Casa de las Mascotas, Encargado: Beatriz Rodríguez, Producto/Servicio: Alimentos y accesorios para mascotas
+Tienda: El Rincón de la Joyería, Encargado: Carlos González, Producto/Servicio: Joyería y relojes
+Tienda: La Tienda de los Perfumes, Encargado: Teresa Martínez, Producto/Servicio: Perfumes y fragancias
+Tienda: El Mundo de la Moda, Encargado: Sergio Gómez, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa del Arte, Encargado: Isabel Morales, Producto/Servicio: Materiales de arte y clases de pintura
+Tienda: El Rincón de los Libros, Encargado: Guillermo Guzmán, Producto/Servicio: Libros y revistas
+Tienda: La Tienda de los Deportes, Encargado: Carmen Díaz, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo de los Dulces, Encargado: Alberto Rangel, Producto/Servicio: Dulces y golosinas
+Tienda: La Casa de los Muebles, Encargado: Gabriela Mora, Producto/Servicio: Muebles para el hogar
+Tienda: El Rincón del Cine, Encargado: Ricardo Vera, Producto/Servicio: Películas y series en DVD
+Tienda: La Tienda de los Deportes, Encargado: Claudia Páez, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo de la Cocina, Encargado: Ernesto Parra, Producto/Servicio: Utensilios de cocina
+Tienda: La Casa de los Regalos, Encargado: Lourdes Sánchez, Producto/Servicio: Regalos y souvenirs
+Tienda: El Rincón de la Belleza, Encargado: Gustavo Cárdenas, Producto/Servicio: Productos de belleza y cuidado personal
+Tienda: La Tienda de los Libros, Encargado: Mariana Peña, Producto/Servicio: Libros y revistas
+Tienda: El Mundo de la Moda, Encargado: Alejandro Ríos, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa de los Juguetes, Encargado: Patricia Méndez, Producto/Servicio: Juguetes y juegos para niños
+Tienda: El Rincón de la Música, Encargado: Roberto Castro, Producto/Servicio: Instrumentos musicales y discos
+Tienda: La Tienda de los Zapatos, Encargado: Susana Ortega, Producto/Servicio: Zapatos y calzado
+Tienda: El Mundo de la Electrónica, Encargado: Fernando Peña, Producto/Servicio: Electrónica y tecnología
+Tienda: La Casa de las Mascotas, Encargado: Beatriz Rodríguez, Producto/Servicio: Alimentos y accesorios para mascotas
+Tienda: El Rincón de la Joyería, Encargado: Carlos González, Producto/Servicio: Joyería y relojes
+Tienda: La Tienda de los Perfumes, Encargado: Teresa Martínez, Producto/Servicio: Perfumes y fragancias
+Tienda: El Mundo de la Moda, Encargado: Sergio Gómez, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa del Arte, Encargado: Isabel Morales, Producto/Servicio: Materiales de arte y clases de pintura
+Tienda: El Rincón de los Libros, Encargado: Guillermo Guzmán, Producto/Servicio: Libros y revistas
+Tienda: La Tienda de los Deportes, Encargado: Carmen Díaz, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo de los Dulces, Encargado: Alberto Rangel, Producto/Servicio: Dulces y golosinas
+Tienda: La Casa de los Muebles, Encargado: Gabriela Mora, Producto/Servicio: Muebles para el hogar
+Tienda: El Rincón del Cine, Encargado: Ricardo Vera, Producto/Servicio: Películas y series en DVD
+Tienda: La Tienda de los Deportes, Encargado: Claudia Páez, Producto/Servicio: Artículos deportivos
+Tienda: El Mundo de la Cocina, Encargado: Ernesto Parra, Producto/Servicio: Utensilios de cocina
+Tienda: La Casa de los Regalos, Encargado: Lourdes Sánchez, Producto/Servicio: Regalos y souvenirs
+Tienda: El Rincón de la Belleza, Encargado: Gustavo Cárdenas, Producto/Servicio: Productos de belleza y cuidado personal
+Tienda: La Tienda de los Libros, Encargado: Mariana Peña, Producto/Servicio: Libros y revistas
+Tienda: El Mundo de la Moda, Encargado: Alejandro Ríos, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa de los Juguetes, Encargado: Patricia Méndez, Producto/Servicio: Juguetes y juegos para niños
+Tienda: El Rincón de la Música, Encargado: Roberto Castro, Producto/Servicio: Instrumentos musicales y discos
+Tienda: La Tienda de los Zapatos, Encargado: Susana Ortega, Producto/Servicio: Zapatos y calzado
+Tienda: El Mundo de la Electrónica, Encargado: Fernando Peña, Producto/Servicio: Electrónica y tecnología
+Tienda: La Casa de las Mascotas, Encargado: Beatriz Rodríguez, Producto/Servicio: Alimentos y accesorios para mascotas
+Tienda: El Rincón de la Joyería, Encargado: Carlos González, Producto/Servicio: Joyería y relojes
+Tienda: La Tienda de los Perfumes, Encargado: Teresa Martínez, Producto/Servicio: Perfumes y fragancias
+Tienda: El Mundo de la Moda, Encargado: Sergio Gómez, Producto/Servicio: Ropa y accesorios de moda
+Tienda: La Casa del Arte, Encargado: Isabel Morales, Producto/Servicio: Materiales de arte y clases de pintura
+Tienda: El Rincón de los Libros, Encargado: Guillermo Guzmán, Producto/Servicio: Libros y revistas
+Tienda: La Tienda de los Deportes, Encargado: Carmen Díaz, Producto/Servicio: Artículos deportivos

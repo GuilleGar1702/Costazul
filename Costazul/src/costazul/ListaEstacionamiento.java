@@ -1,9 +1,9 @@
 package costazul;
 
-public class Lista {
-    NodoLista primero;
+public class ListaEstacionamiento {
+    NodoEstacionamiento primero;
      
-     public Lista()
+     public ListaEstacionamiento()
      {
          this.primero = null;
      }
@@ -13,14 +13,14 @@ public class Lista {
      }
      public void agregarElemento(int cedula, String nombre, String apellido, String marca, String matricula, String color, String vehiculo, String seccion)
      {
-         NodoLista nuevoElemento = new NodoLista(cedula, nombre, apellido, marca, matricula, color, vehiculo, seccion);
+         NodoEstacionamiento nuevoElemento = new NodoEstacionamiento(cedula, nombre, apellido, marca, matricula, color, vehiculo, seccion);
          if (this.vacio())
          {
              primero = nuevoElemento;
          }
          else
          {
-             NodoLista actual = primero;
+             NodoEstacionamiento actual = primero;
              while (actual.siguiente != null)
              {
                  actual = actual.siguiente;
@@ -30,7 +30,7 @@ public class Lista {
      }
      public void mostrar()
      {
-         NodoLista actual = primero;
+         NodoEstacionamiento actual = primero;
          while (actual != null)
          {
              System.out.println(actual.Cedula);
@@ -47,7 +47,7 @@ public class Lista {
      }
      
      public String buscarElementos(int posicion){
-         NodoLista actual = primero;
+         NodoEstacionamiento actual = primero;
          int contador = 0;
          while (actual != null){
              if(contador == posicion){

@@ -1,6 +1,7 @@
 package costazul;
 
 import java.awt.BorderLayout;
+import java.io.IOException;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -19,6 +20,11 @@ public class Inicio extends javax.swing.JFrame {
     public void InicioEsta(){
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
         PanelSetter(inicioEsta);
+    }
+    
+    public void IniciarTiendas() throws IOException{
+        Tiendas tiendas = new Tiendas();
+        tiendas.cargarTiendas();
     }
     
     public void PanelSetter(JPanel panel){

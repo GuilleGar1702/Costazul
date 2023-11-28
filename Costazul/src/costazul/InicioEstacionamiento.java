@@ -5,6 +5,8 @@
  */
 package costazul;
 
+import java.io.IOException;
+
 /**
  *
  * @author Guillermo
@@ -23,7 +25,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     String Vehiculo;
     public String Seccion;
     
-    public Lista listaVehiculos=new Lista();
+    public ListaEstacionamiento listaVehiculos=new ListaEstacionamiento();
     
     private Inicio inicio;
     public InicioEstacionamiento(Inicio inicio) {
@@ -259,9 +261,10 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Estacionamiento Esta = new Estacionamiento(this);
         inicio.PanelSetter(Esta);
     }
-    public void addvehicle(){
+    public void addvehicle() throws IOException{
         listaVehiculos.agregarElemento(Cedula, Nombre, Apellido, Marca, Matricula, Color, Vehiculo, Seccion);
         listaVehiculos.mostrar();
+        inicio.IniciarTiendas();
     }
     
     

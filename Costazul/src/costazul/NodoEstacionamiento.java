@@ -1,7 +1,7 @@
 package costazul;
 
 
-public class NodoLista {
+public class NodoEstacionamiento {
     int Cedula;
     String Nombre;
     String Apellido;
@@ -10,9 +10,9 @@ public class NodoLista {
     String Color;
     String Vehiculo;
     String Seccion;
-    NodoLista siguiente;
+    NodoEstacionamiento siguiente;
 
-    public NodoLista(int contenidoCedu, String contenidoNom, String contenidoApe, String contenidoMar, String contenidoMatri, String contenidoColor, String contenidoVehi, String contenidoSec) {
+    public NodoEstacionamiento(int contenidoCedu, String contenidoNom, String contenidoApe, String contenidoMar, String contenidoMatri, String contenidoColor, String contenidoVehi, String contenidoSec) {
         this.Cedula = contenidoCedu;
         this.Nombre = contenidoNom;
         this.Apellido= contenidoApe;
