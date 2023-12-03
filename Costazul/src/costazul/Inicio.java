@@ -1,9 +1,12 @@
 package costazul;
 
 import java.awt.BorderLayout;
+import java.awt.Graphics;
+import java.awt.Image;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -13,7 +16,10 @@ import javax.swing.JPanel;
  */
 public class Inicio extends javax.swing.JFrame {
 
+    Fondo fondo = new Fondo();
     public Inicio() {
+        this.setContentPane(fondo);
+        setResizable(false);
         initComponents();
         this.setExtendedState(this.MAXIMIZED_BOTH);
         InicioEntrada();
@@ -53,28 +59,6 @@ public class Inicio extends javax.swing.JFrame {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -142,4 +126,17 @@ public class Inicio extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelContenido;
     // End of variables declaration//GEN-END:variables
+
+    
+    class Fondo extends JPanel{
+        private Image ca;
+        public void paint (Graphics grafico){
+            ca = new ImageIcon(getClass().getResource("fondo.png")).getImage();
+            grafico.drawImage(ca, 0, 0, getWidth(), getHeight(), this);
+            setOpaque(false);
+            super.paint(grafico);
+        }
+    }
+    
+    
 }

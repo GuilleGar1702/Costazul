@@ -33,43 +33,32 @@ public class Entrada extends javax.swing.JPanel {
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BtnSi.setBackground(new java.awt.Color(28, 28, 28));
         BtnSi.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnSi.setForeground(new java.awt.Color(255, 255, 255));
         BtnSi.setText("CON VEHÍCULO");
+        BtnSi.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSiActionPerformed(evt);
             }
         });
+        add(BtnSi, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 750, 400, 150));
 
+        BtnNo.setBackground(new java.awt.Color(28, 28, 28));
         BtnNo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnNo.setForeground(new java.awt.Color(255, 255, 255));
+        BtnNo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/fondo.png"))); // NOI18N
         BtnNo.setText("SIN VEHÍCULO");
+        BtnNo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnNoActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(69, 69, 69)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BtnNo, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSi, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1451, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(473, Short.MAX_VALUE)
-                .addComponent(BtnNo, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(113, 113, 113)
-                .addComponent(BtnSi, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54))
-        );
+        add(BtnNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 400, 150));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNoActionPerformed

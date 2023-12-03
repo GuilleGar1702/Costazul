@@ -35,6 +35,5 @@ public class NodoArbol {
         this.puesto = puesto;
         this.altura = 1;
     }
-    
 }
 

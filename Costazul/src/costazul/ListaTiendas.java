@@ -5,6 +5,8 @@
  */
 package costazul;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Guillermo
@@ -20,9 +22,9 @@ public class ListaTiendas {
      {
          return this.primero == null;
      }
-     public void agregarElemento(String Tienda, String Encargado, String Rubro)
+     public void agregarElemento(String Tienda, String Encargado, String Rubro, String[] Productos)
      {
-         NodoTienda nuevoElemento = new NodoTienda(Tienda, Encargado, Rubro);
+         NodoTienda nuevoElemento = new NodoTienda(Tienda, Encargado, Rubro, Productos);
          if (this.vacio())
          {
              primero = nuevoElemento;
@@ -39,6 +41,9 @@ public class ListaTiendas {
          System.out.println(Tienda);
          System.out.println(Encargado);
          System.out.println(Rubro);
+         for (String x:Productos){
+             System.out.println(x);
+         }
          System.out.println("-----------------------------------------------------------------");
      }
      public void mostrar()
@@ -49,6 +54,9 @@ public class ListaTiendas {
              System.out.println(actual.Tienda);
              System.out.println(actual.Encargado);
              System.out.println(actual.Rubro);
+             for (String x:actual.Productos){
+             System.out.println(x);
+         }
              actual = actual.siguiente;
          }
          //System.out.println("Null");
@@ -59,7 +67,7 @@ public class ListaTiendas {
          int contador = 0;
          while (actual != null){
              if(contador == posicion){
-                 return (actual.Tienda+" "+actual.Encargado+"\n"+actual.Rubro);
+                 return (actual.Tienda+"\n"+actual.Encargado+"\n"+actual.Rubro+"\n"+Arrays.toString(actual.Productos));
              }
              actual = actual.siguiente;
              contador++;           

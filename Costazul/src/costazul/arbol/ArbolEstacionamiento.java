@@ -104,7 +104,7 @@ public class ArbolEstacionamiento {
     public NodoArbol obtenerNodoMinimo(NodoArbol nodo) {
         NodoArbol actual = nodo;
 
-        // Iterar hacia la izquierda para encontrar el nodo más pequeño
+        
         while (actual.izquierda != null) {
             actual = actual.izquierda;
         }
@@ -211,5 +211,9 @@ public class ArbolEstacionamiento {
             }
         }
     }
+    
+    
+    
+    
     
 }

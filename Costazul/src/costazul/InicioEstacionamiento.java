@@ -53,7 +53,6 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
         //ArbolVehiculos.borrar(10);
         //RefrescarEliminacion();
-        
     }
     
     
@@ -130,6 +129,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         LblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(LblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1920, -1));
 
+        PDatos.setOpaque(false);
         PDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
@@ -176,58 +176,39 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         LblColor.setText("Color");
         PDatos.add(LblColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 696, -1, 56));
 
-        add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 540, 780));
+        add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 540, 780));
+
+        jPanel1.setOpaque(false);
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Grupo1.add(RBSmall);
         RBSmall.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        RBSmall.setText("Pequeño");
+        RBSmall.setText("Sedan");
         RBSmall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RBSmallActionPerformed(evt);
             }
         });
+        jPanel1.add(RBSmall, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 84, 217, 110));
 
         Grupo1.add(RBBann);
         RBBann.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBBann.setText("Camioneta");
+        jPanel1.add(RBBann, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 200, -1, 110));
 
         Grupo1.add(RBBike);
         RBBike.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        RBBike.setText("Moto");
+        RBBike.setText("Motocicleta");
+        jPanel1.add(RBBike, new org.netbeans.lib.awtextra.AbsoluteConstraints(19, 316, 290, 110));
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TIPO DE VEHÍCULO");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(RBBike, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(RBBann, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(RBSmall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(124, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel2)
-                .addGap(18, 18, 18)
-                .addComponent(RBSmall, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(RBBann, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RBBike, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(245, 245, 245))
-        );
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 19, 360, -1));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1490, 390, 360, 455));
 
+        BtnLugar.setBackground(new java.awt.Color(51, 51, 51));
         BtnLugar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         BtnLugar.setText("SELECCIONAR LUGAR");
         BtnLugar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -240,7 +221,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarActionPerformed(evt);
             }
         });
-        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 850, 300, 80));
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1520, 850, 320, 80));
     }// </editor-fold>//GEN-END:initComponents
 
     public void Esta(){

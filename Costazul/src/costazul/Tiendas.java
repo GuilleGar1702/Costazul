@@ -29,7 +29,8 @@ public class Tiendas {
         for (String x:xd){
             String[] atributos = x.split("-");
             //atributos[0] = atributos[0].replace("Tienda: ", "");
-            listaTiendas.agregarElemento(atributos[0], atributos[1], atributos[2]);
+            String[] p = atributos[3].split("/");
+            listaTiendas.agregarElemento(atributos[0], atributos[1], atributos[2], p);
         }
     }
 }
