@@ -22,6 +22,7 @@ public class Estacionamiento extends javax.swing.JPanel {
     public Estacionamiento(InicioEstacionamiento EstacionamientoInicio) {
         initComponents();
         this.EstacionamientoInicio=EstacionamientoInicio;
+        
     }
 
     /**
@@ -48,6 +49,7 @@ public class Estacionamiento extends javax.swing.JPanel {
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnSecA.setText("SECCIÓN A");
@@ -120,6 +122,9 @@ public class Estacionamiento extends javax.swing.JPanel {
         add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 970, 557, 56));
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
+    
     private void BtnSecAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecAActionPerformed
         EstacionamientoInicio.seccion='A';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
