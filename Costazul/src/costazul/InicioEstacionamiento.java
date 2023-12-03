@@ -51,7 +51,19 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         //EliminarArchivo();
         System.out.println("-----------------------------------------------------------------");
         ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
+        //ArbolVehiculos.borrar(10);
+        //RefrescarEliminacion();
+        
     }
+    
+    
+    private void RefrescarEliminacion(){
+        EliminarArchivo();
+        CrearArchivo();
+        ArbolVehiculos.Registro(ArbolVehiculos.raiz);
+    }
+    
+    
 
     public void cargarNodos(){
         try {
@@ -114,107 +126,60 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
 
         LblTitulo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         LblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        LblTitulo.setText("Registro de Estacionamiento");
+        LblTitulo.setText("REGISTRO DE ESTACIONAMIENTO");
         LblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         add(LblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1920, -1));
 
+        PDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        PDatos.add(TFCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 6, 309, 47));
 
         LblCedula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblCedula.setText("Cédula");
+        PDatos.add(LblCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         LblCedula1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblCedula1.setText("Nombre");
+        PDatos.add(LblCedula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 142, -1, 53));
 
         TFNombre.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        PDatos.add(TFNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 142, 309, 53));
 
         LblApellido.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblApellido.setText("Apellido");
+        PDatos.add(LblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 290, -1, 57));
 
         TFApellido.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        PDatos.add(TFApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 290, 309, 49));
 
         LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMarca.setText("Marca");
+        PDatos.add(LblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 439, -1, -1));
 
         TFMarca.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        PDatos.add(TFMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 444, 309, 47));
 
         LblMatricula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMatricula.setText("Matrícula");
+        PDatos.add(LblMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 571, -1, -1));
 
         TFMatricula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFMatricula.setMaximumSize(new java.awt.Dimension(14, 40));
+        PDatos.add(TFMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 576, 309, 47));
 
         TFColor.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFColor.setMaximumSize(new java.awt.Dimension(14, 40));
+        PDatos.add(TFColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 700, 320, 50));
 
         LblColor.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblColor.setText("Color");
+        PDatos.add(LblColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 696, -1, 56));
 
-        javax.swing.GroupLayout PDatosLayout = new javax.swing.GroupLayout(PDatos);
-        PDatos.setLayout(PDatosLayout);
-        PDatosLayout.setHorizontalGroup(
-            PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PDatosLayout.createSequentialGroup()
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PDatosLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(PDatosLayout.createSequentialGroup()
-                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(LblCedula)
-                                    .addComponent(LblCedula1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TFNombre, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
-                                    .addComponent(TFCedula)))
-                            .addGroup(PDatosLayout.createSequentialGroup()
-                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(LblApellido)
-                                    .addComponent(LblMarca)
-                                    .addComponent(LblMatricula))
-                                .addGap(46, 46, 46)
-                                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TFApellido, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 309, Short.MAX_VALUE)
-                                    .addComponent(TFMarca, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(TFMatricula, javax.swing.GroupLayout.Alignment.TRAILING)))))
-                    .addGroup(PDatosLayout.createSequentialGroup()
-                        .addComponent(LblColor)
-                        .addGap(115, 115, 115)
-                        .addComponent(TFColor)))
-                .addContainerGap())
-        );
-        PDatosLayout.setVerticalGroup(
-            PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PDatosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(TFCedula)
-                    .addComponent(LblCedula, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(89, 89, 89)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(LblCedula1, javax.swing.GroupLayout.DEFAULT_SIZE, 53, Short.MAX_VALUE)
-                    .addComponent(TFNombre))
-                .addGap(95, 95, 95)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LblApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(92, 92, 92)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LblMarca)
-                    .addComponent(TFMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LblMatricula)
-                    .addComponent(TFMatricula, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(73, 73, 73)
-                .addGroup(PDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LblColor, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFColor, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(23, 23, 23))
-        );
-
-        add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 251, -1, -1));
+        add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 540, 780));
 
         Grupo1.add(RBSmall);
-        RBSmall.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBSmall.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBSmall.setText("Pequeño");
         RBSmall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -223,11 +188,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         });
 
         Grupo1.add(RBBann);
-        RBBann.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBBann.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBBann.setText("Camioneta");
 
         Grupo1.add(RBBike);
-        RBBike.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        RBBike.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBBike.setText("Moto");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -245,7 +210,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                     .addComponent(RBBike, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(RBBann, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(RBSmall, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(504, Short.MAX_VALUE))
+                .addContainerGap(124, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -261,9 +226,9 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 .addGap(245, 245, 245))
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1113, 385, -1, 455));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1490, 390, 360, 455));
 
-        BtnLugar.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnLugar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         BtnLugar.setText("SELECCIONAR LUGAR");
         BtnLugar.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -275,7 +240,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarActionPerformed(evt);
             }
         });
-        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1165, 846, 702, 172));
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1540, 850, 300, 80));
     }// </editor-fold>//GEN-END:initComponents
 
     public void Esta(){
