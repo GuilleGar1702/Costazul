@@ -66,7 +66,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
 
     public void cargarNodos(){
         try {
-            Path ruta= Paths.get("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\arbol\\Parking.txt");
+            Path ruta= Paths.get("./src/costazul/arbol/Parking.txt");
             List<String> listaPajuaTiendas=Files.readAllLines(ruta);
             String[] xd= new String[listaPajuaTiendas.size()];
             listaPajuaTiendas.toArray(xd);
@@ -230,7 +230,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     }
     
     private void CrearArchivo(){
-        File registro = new File("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\arbol\\Parking.txt");
+        File registro = new File("./src/costazul/arbol/Parking.txt");
             if (!registro.exists()) {
                 try {
                     registro.createNewFile();
@@ -241,7 +241,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
             }
     }
     private void EliminarArchivo(){
-        File registro = new File("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\arbol\\Parking.txt");
+        File registro = new File("./src/costazul/arbol/Parking.txt");
             if (registro.exists()) {
                 registro.delete();
                 System.out.println("se borro el archivo");

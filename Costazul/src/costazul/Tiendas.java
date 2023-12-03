@@ -22,7 +22,7 @@ public class Tiendas {
     
     public void cargarTiendas() 
         throws IOException{
-        Path ruta= Paths.get("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\Tiendas.txt");
+        Path ruta= Paths.get("./src/costazul/Tiendas.txt");
         List<String> listaPajuaTiendas=Files.readAllLines(ruta);
         String[] xd= new String[listaPajuaTiendas.size()];
         listaPajuaTiendas.toArray(xd);

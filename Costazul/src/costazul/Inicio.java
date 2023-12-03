@@ -3,6 +3,7 @@ package costazul;
 import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -28,6 +29,7 @@ public class Inicio extends javax.swing.JFrame {
     
     
     public void InicioEntrada(){
+        System.out.println(new File(".").getAbsolutePath());
         Entrada entrada = new Entrada(this);
         PanelSetter(entrada);
     }

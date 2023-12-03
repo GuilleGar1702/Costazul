@@ -204,7 +204,7 @@ public class ArbolEstacionamiento {
                 Registro(nodo.izquierda);
                 //System.out.println(nodo.puesto);
                 String registro= nodo.puesto+"-"+nodo.seccion+"-"+nodo.nombre+"-"+nodo.apellido+"-"+nodo.cedula+"-"+nodo.colorVehiculo+"-"+nodo.marcaVehiculo+"-"+nodo.matricula+"-"+nodo.horaEntrada+"-"+nodo.horaSalida+"-"+nodo.tipoDeVehiculo+"\n";
-                Files.write(Paths.get("F:\\Users\\Guillermo\\Documents\\Universidad\\Estructura de Datos\\Proyectos\\Costaazul\\Costazul\\Costazul\\src\\costazul\\arbol\\Parking.txt"), registro.getBytes(), StandardOpenOption.APPEND);
+                Files.write(Paths.get("./src/costazul/arbol/Parking.txt"), registro.getBytes(), StandardOpenOption.APPEND);
                 Registro(nodo.derecha);
             } catch (IOException ex) {
                 Logger.getLogger(ArbolEstacionamiento.class.getName()).log(Level.SEVERE, null, ex);
