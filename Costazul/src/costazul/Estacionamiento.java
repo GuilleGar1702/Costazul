@@ -39,9 +39,16 @@ public class Estacionamiento extends javax.swing.JPanel {
         BtnSecD = new javax.swing.JButton();
         BtnSecE = new javax.swing.JButton();
         BtnSecF = new javax.swing.JButton();
+        LblPuesto = new javax.swing.JLabel();
+        TFPuesto = new javax.swing.JTextField();
+        LblEntrada = new javax.swing.JLabel();
+        TFEntrada = new javax.swing.JTextField();
+        LblSalida = new javax.swing.JLabel();
+        TFSalida = new javax.swing.JTextField();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnSecA.setText("SECCIÓN A");
         BtnSecA.addActionListener(new java.awt.event.ActionListener() {
@@ -49,6 +56,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecAActionPerformed(evt);
             }
         });
+        add(BtnSecA, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 35, 400, 115));
 
         BtnSecB.setText("SECCIÓN B");
         BtnSecB.addActionListener(new java.awt.event.ActionListener() {
@@ -56,6 +64,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecBActionPerformed(evt);
             }
         });
+        add(BtnSecB, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 168, 400, 115));
 
         BtnSecC.setText("SECCIÓN C");
         BtnSecC.addActionListener(new java.awt.event.ActionListener() {
@@ -63,6 +72,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecCActionPerformed(evt);
             }
         });
+        add(BtnSecC, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 301, 400, 115));
 
         BtnSecD.setText("SECCIÓN D");
         BtnSecD.addActionListener(new java.awt.event.ActionListener() {
@@ -70,6 +80,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecDActionPerformed(evt);
             }
         });
+        add(BtnSecD, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 434, 400, 115));
 
         BtnSecE.setText("SECCIÓN E");
         BtnSecE.addActionListener(new java.awt.event.ActionListener() {
@@ -77,6 +88,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecEActionPerformed(evt);
             }
         });
+        add(BtnSecE, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 567, 400, 115));
 
         BtnSecF.setText("SECCIÓN F");
         BtnSecF.addActionListener(new java.awt.event.ActionListener() {
@@ -84,69 +96,61 @@ public class Estacionamiento extends javax.swing.JPanel {
                 BtnSecFActionPerformed(evt);
             }
         });
+        add(BtnSecF, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 700, 400, 115));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(BtnSecF, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSecE, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSecD, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSecC, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSecB, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BtnSecA, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(1505, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
-                .addComponent(BtnSecA, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnSecB, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnSecC, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnSecD, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnSecE, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(BtnSecF, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(265, Short.MAX_VALUE))
-        );
+        LblPuesto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        LblPuesto.setText("Puesto");
+        add(LblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 820, -1, 56));
+
+        TFPuesto.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 820, 557, 56));
+
+        LblEntrada.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        LblEntrada.setText("Entrada");
+        add(LblEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 900, -1, 56));
+
+        TFEntrada.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        add(TFEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 900, 557, 56));
+
+        LblSalida.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        LblSalida.setText("Salida");
+        add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 970, -1, 56));
+
+        TFSalida.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 970, 557, 56));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnSecAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecAActionPerformed
-        EstacionamientoInicio.Seccion="A";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='A';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecAActionPerformed
 
     private void BtnSecBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecBActionPerformed
-        EstacionamientoInicio.Seccion="B";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='B';
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecBActionPerformed
 
     private void BtnSecCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecCActionPerformed
-        EstacionamientoInicio.Seccion="C";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='C';
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecCActionPerformed
 
     private void BtnSecDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecDActionPerformed
-        EstacionamientoInicio.Seccion="D";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='D';
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecDActionPerformed
 
     private void BtnSecEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecEActionPerformed
-        EstacionamientoInicio.Seccion="E";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='E';
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecEActionPerformed
 
     private void BtnSecFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecFActionPerformed
-        EstacionamientoInicio.Seccion="F";
-        EstacionamientoInicio.addvehicle();
+        EstacionamientoInicio.seccion='F';
+        EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecFActionPerformed
 
 
@@ -157,5 +161,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private javax.swing.JButton BtnSecD;
     private javax.swing.JButton BtnSecE;
     private javax.swing.JButton BtnSecF;
+    private javax.swing.JLabel LblEntrada;
+    private javax.swing.JLabel LblPuesto;
+    private javax.swing.JLabel LblSalida;
+    private javax.swing.JTextField TFEntrada;
+    private javax.swing.JTextField TFPuesto;
+    private javax.swing.JTextField TFSalida;
     // End of variables declaration//GEN-END:variables
 }

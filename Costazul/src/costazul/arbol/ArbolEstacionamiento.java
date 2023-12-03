@@ -6,7 +6,7 @@ package costazul.arbol;
 @author regna*/
 public class ArbolEstacionamiento {
 
-    NodoArbol raiz;
+    public NodoArbol raiz;
 
     public int getAlturaArbol (NodoArbol NodoArbol){
         if((NodoArbol != null)){
@@ -47,8 +47,6 @@ public class ArbolEstacionamiento {
         return y;
     }
     
-    
-    
     //Mosca Cesar, que si raspo esta vaina dejo de estudiar
     //Y me vuelvo un loquito del centro
     public NodoArbol VolteadorYuca_LaVenganzaDelMemoria(NodoArbol nodo, int puesto){
@@ -78,20 +76,6 @@ public class ArbolEstacionamiento {
         }
         return nodo;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     public NodoArbol insertar (NodoArbol nodo, String nombre, String apellido, String cedula, String matricula, String tipoDeVehiculo, String marcaVehiculo, String colorVehiculo, String horaEntrada, String horaSalida, char seccion, int puesto){
         if (nodo == null){
@@ -192,7 +176,7 @@ public class ArbolEstacionamiento {
     public void recorrerPreorden(NodoArbol nodo,String prefijo) {
         if (nodo != null) {
             
-            System.out.println(prefijo+nodo.puesto);
+            System.out.println(prefijo+nodo.puesto+"||\n"+nodo.nombre+"\n"+nodo.apellido+"\n"+nodo.cedula+"\n"+nodo.colorVehiculo+"\n"+nodo.marcaVehiculo+"\n"+nodo.matricula+"\n"+nodo.horaEntrada+"\n"+nodo.horaSalida+"||");
             recorrerPreorden(nodo.izquierda,(prefijo+" "));
             recorrerPreorden(nodo.derecha,(prefijo+" "));
         }

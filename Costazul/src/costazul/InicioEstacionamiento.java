@@ -7,6 +7,9 @@ package costazul;
 
 import java.io.IOException;
 
+
+import costazul.arbol.ArbolEstacionamiento;
+import costazul.arbol.NodoArbol;
 /**
  *
  * @author Guillermo
@@ -16,16 +19,20 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     /**
      * Creates new form InicioEstacionamiento
      */
-    int Cedula;
-    String Nombre;
-    String Apellido;
-    String Marca;
-    String Matricula;
-    String Color;
-    String Vehiculo;
-    public String Seccion;
+    String nombre;
+    String apellido;
+    String cedula;
+    String matricula;
+    String tipoDeVehiculo;
+    String marcaVehiculo;
+    String colorVehiculo;
+    String horaEntrada;
+    String horaSalida;
+    public char seccion;
+    public int puesto;
     
-    public ListaEstacionamiento listaVehiculos=new ListaEstacionamiento();
+    //public ListaEstacionamiento listaVehiculos=new ListaEstacionamiento();
+    public ArbolEstacionamiento ArbolVehiculos = new ArbolEstacionamiento();
     
     private Inicio inicio;
     public InicioEstacionamiento(Inicio inicio) {
@@ -67,11 +74,13 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
         setPreferredSize(new java.awt.Dimension(1920, 1080));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         LblTitulo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         LblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LblTitulo.setText("Registro de Estacionamiento");
         LblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(LblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1920, -1));
 
         TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
 
@@ -166,6 +175,8 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 .addGap(23, 23, 23))
         );
 
+        add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 251, -1, -1));
+
         Grupo1.add(RBSmall);
         RBSmall.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         RBSmall.setText("Pequeño");
@@ -214,6 +225,8 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 .addGap(245, 245, 245))
         );
 
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1113, 385, -1, 455));
+
         BtnLugar.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         BtnLugar.setText("SELECCIONAR LUGAR");
         BtnLugar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -221,50 +234,22 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarMouseClicked(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(PDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 523, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 573, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(BtnLugar, javax.swing.GroupLayout.PREFERRED_SIZE, 702, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(53, 53, 53))))
-            .addComponent(LblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(LblTitulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 455, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(BtnLugar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(62, 62, 62))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(PDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 787, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42))))
-        );
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1165, 846, 702, 172));
     }// </editor-fold>//GEN-END:initComponents
 
     public void Esta(){
         Estacionamiento Esta = new Estacionamiento(this);
         inicio.PanelSetter(Esta);
     }
-    public void addvehicle(){
+    /*public void addvehicle(){
         listaVehiculos.agregarElemento(Cedula, Nombre, Apellido, Marca, Matricula, Color, Vehiculo, Seccion);
         listaVehiculos.mostrar();
         //inicio.IniciarTiendas();
+    }*/
+    //arbol.raiz = arbol.insertar(arbol.raiz, 10);
+    public void addVehicle(){
+        ArbolVehiculos.raiz=ArbolVehiculos.insertar(ArbolVehiculos.raiz, nombre, apellido, cedula, matricula, tipoDeVehiculo, marcaVehiculo, colorVehiculo, horaEntrada, horaSalida, seccion, puesto);
+        ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
     }
     
     private void RBSmallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBSmallActionPerformed
@@ -272,20 +257,20 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     }//GEN-LAST:event_RBSmallActionPerformed
 
     private void BtnLugarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnLugarMouseClicked
-        Cedula=Integer.parseInt(TFCedula.getText());
-        Nombre=TFNombre.getText();
-        Apellido=TFApellido.getText();
-        Marca=TFMarca.getText();
-        Matricula=TFMatricula.getText();
-        Color=TFColor.getText();
+        cedula=TFCedula.getText();
+        nombre=TFNombre.getText();
+        apellido=TFApellido.getText();
+        marcaVehiculo=TFMarca.getText();
+        matricula=TFMatricula.getText();
+        colorVehiculo=TFColor.getText();
         if(RBSmall.isSelected()==true){
-            Vehiculo="Pequeño";
+            tipoDeVehiculo="Sedan";
         }else if(RBBann.isSelected()==true){
-            Vehiculo="Camioneta";
+            tipoDeVehiculo="Camioneta";
         }else if(RBBike.isSelected()==true){
-            Vehiculo="Moto";
+            tipoDeVehiculo="Motocicleta";
         }else{
-            Vehiculo="Pequeño";
+            tipoDeVehiculo="Sedan";
         }
         Esta();
     }//GEN-LAST:event_BtnLugarMouseClicked
