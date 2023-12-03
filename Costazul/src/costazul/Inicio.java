@@ -16,9 +16,17 @@ public class Inicio extends javax.swing.JFrame {
     public Inicio() {
         initComponents();
         this.setExtendedState(this.MAXIMIZED_BOTH);
-        InicioEsta();
+        InicioEntrada();
         IniciarTiendas();
     }
+    
+    
+    public void InicioEntrada(){
+        Entrada entrada = new Entrada(this);
+        PanelSetter(entrada);
+    }
+    
+    
     public void InicioEsta(){
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
         PanelSetter(inicioEsta);
