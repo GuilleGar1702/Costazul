@@ -48,7 +48,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         CrearArchivo();
         cargarNodos();
         //ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
-        EliminarArchivo();
+        //EliminarArchivo();
         System.out.println("-----------------------------------------------------------------");
         ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
     }
@@ -68,7 +68,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 matricula=atributos[7];
                 tipoDeVehiculo=atributos[10];
                 marcaVehiculo=atributos[6];
-                colorVehiculo=atributos[4];
+                colorVehiculo=atributos[5];
                 horaEntrada=atributos[8];
                 horaSalida=atributos[9];
                 seccion=atributos[1].charAt(0);

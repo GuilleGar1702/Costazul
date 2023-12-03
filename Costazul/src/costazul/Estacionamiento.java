@@ -135,26 +135,41 @@ public class Estacionamiento extends javax.swing.JPanel {
 
     private void BtnSecBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecBActionPerformed
         EstacionamientoInicio.seccion='B';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecBActionPerformed
 
     private void BtnSecCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecCActionPerformed
         EstacionamientoInicio.seccion='C';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecCActionPerformed
 
     private void BtnSecDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecDActionPerformed
         EstacionamientoInicio.seccion='D';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecDActionPerformed
 
     private void BtnSecEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecEActionPerformed
         EstacionamientoInicio.seccion='E';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecEActionPerformed
 
     private void BtnSecFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecFActionPerformed
         EstacionamientoInicio.seccion='F';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
     }//GEN-LAST:event_BtnSecFActionPerformed
 

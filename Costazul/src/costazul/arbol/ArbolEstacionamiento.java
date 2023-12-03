@@ -115,6 +115,7 @@ public class ArbolEstacionamiento {
     //eliminar elementos del arbol
     public void borrar(int puesto) {
         raiz = eliminar(raiz, puesto);
+        
     }
     public NodoArbol eliminar (NodoArbol nodo, int puesto){
         if (nodo==null){
@@ -210,4 +211,5 @@ public class ArbolEstacionamiento {
             }
         }
     }
+    
 }
