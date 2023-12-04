@@ -1,5 +1,7 @@
-1-F-ñame-regnault-30926759-negra-toyota-plaquita-23456-1234-Sedan
+5-B-Guiller-gar-33251561-verde-Toyota-135561-53-158-Camioneta
 10-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
 15-A-Guillermo-salazar-123456-Rojo-tesla-2222-21-21-Sedan
 25-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
 30-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
+555-E-Guillermo-Garcia-30685065-Verde-Toyota-vau 03v-10-23-Camioneta
+1555-B-Guilletron-Garcitron-12345678-Gris-Alfa Romeo-00001-11-1-Sedan

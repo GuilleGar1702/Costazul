@@ -213,25 +213,6 @@ public class ArbolEstacionamiento {
     }
     
     
-    //guille te deje el discord un video con el funcionamiento, pero aqui te comento, mira si el int de puesto que quiere sbuscar esta en el nodo raiz
-    //si es menor busca a la izquierda, si es mayor busca a la derecha y si lo consigue imprime con un metodo imprimir que esta en la clase nodo, eso es solo para tenerlo en logs
-    //el devuelve el nodoencontrado, sino lo encuentra devuelve null
-    public NodoArbol buscarPuesto(NodoArbol nodo, int buscarPuesto){
-        if(nodo != null){
-            if (nodo.puesto == buscarPuesto){
-                nodo.imprimirNodo();
-                return nodo;
-            }
-            if (buscarPuesto < nodo.puesto){
-                return buscarPuesto(nodo.izquierda, buscarPuesto);
-            }else{
-                return buscarPuesto(nodo.derecha, buscarPuesto);
-            }
-        }
-        return null;
-    }
-    
-    
     
     
     

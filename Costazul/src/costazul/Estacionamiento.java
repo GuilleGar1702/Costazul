@@ -52,7 +52,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        BtnSecA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecA.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecA.setText("SECCIÓN A");
+        BtnSecA.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecAActionPerformed(evt);
@@ -60,7 +64,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         });
         add(BtnSecA, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 35, 400, 115));
 
+        BtnSecB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecB.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecB.setText("SECCIÓN B");
+        BtnSecB.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecBActionPerformed(evt);
@@ -68,7 +76,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         });
         add(BtnSecB, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 168, 400, 115));
 
+        BtnSecC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecC.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecC.setText("SECCIÓN C");
+        BtnSecC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecCActionPerformed(evt);
@@ -76,7 +88,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         });
         add(BtnSecC, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 301, 400, 115));
 
+        BtnSecD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecD.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecD.setText("SECCIÓN D");
+        BtnSecD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecDActionPerformed(evt);
@@ -84,7 +100,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         });
         add(BtnSecD, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 434, 400, 115));
 
+        BtnSecE.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecE.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecE.setText("SECCIÓN E");
+        BtnSecE.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecEActionPerformed(evt);
@@ -92,7 +112,11 @@ public class Estacionamiento extends javax.swing.JPanel {
         });
         add(BtnSecE, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 567, 400, 115));
 
+        BtnSecF.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        BtnSecF.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSecF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSecF.setText("SECCIÓN F");
+        BtnSecF.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSecF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnSecFActionPerformed(evt);

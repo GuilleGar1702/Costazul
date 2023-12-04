@@ -66,12 +66,12 @@ public class ListaTiendas {
          //System.out.println("Null");
      }
      
-     public String buscarElementos(int posicion){
+     public NodoTienda buscarElementos(int posicion){
          NodoTienda actual = primero;
          int contador = 0;
          while (actual != null){
              if(contador == posicion){
-                 return (actual.Tienda+"\n"+actual.Encargado+"\n"+actual.Rubro+"\n"+Arrays.toString(actual.Productos));
+                 return actual;
              }
              actual = actual.siguiente;
              contador++;           

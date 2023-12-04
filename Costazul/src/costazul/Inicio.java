@@ -16,7 +16,8 @@ import javax.swing.JPanel;
  * @author Guillermo
  */
 public class Inicio extends javax.swing.JFrame {
-
+    
+    FondoTienda fondoTienda = new FondoTienda();
     Fondo fondo = new Fondo();
     public Inicio() {
         this.setContentPane(fondo);
@@ -35,7 +36,9 @@ public class Inicio extends javax.swing.JFrame {
     }
     
     
+    
     public void InicioEsta(){
+        
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
         PanelSetter(inicioEsta);
     }
@@ -129,12 +132,19 @@ public class Inicio extends javax.swing.JFrame {
     class Fondo extends JPanel{
         private Image ca;
         public void paint (Graphics grafico){
+            ca = new ImageIcon(getClass().getResource("fondo2.png")).getImage();
+            grafico.drawImage(ca, 0, 0, getWidth(), getHeight(), this);
+            setOpaque(false);
+            super.paint(grafico);
+        }
+    }
+    class FondoTienda extends JPanel{
+        private Image ca;
+        public void paint (Graphics grafico){
             ca = new ImageIcon(getClass().getResource("fondo.png")).getImage();
             grafico.drawImage(ca, 0, 0, getWidth(), getHeight(), this);
             setOpaque(false);
             super.paint(grafico);
         }
     }
-    
-    
 }

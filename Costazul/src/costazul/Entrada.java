@@ -33,10 +33,11 @@ public class Entrada extends javax.swing.JPanel {
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
+        setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BtnSi.setBackground(new java.awt.Color(28, 28, 28));
-        BtnSi.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnSi.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         BtnSi.setForeground(new java.awt.Color(255, 255, 255));
         BtnSi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSi.setText("CON VEHÍCULO");
@@ -46,10 +47,10 @@ public class Entrada extends javax.swing.JPanel {
                 BtnSiActionPerformed(evt);
             }
         });
-        add(BtnSi, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 750, 400, 150));
+        add(BtnSi, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 830, 360, 110));
 
         BtnNo.setBackground(new java.awt.Color(28, 28, 28));
-        BtnNo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        BtnNo.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         BtnNo.setForeground(new java.awt.Color(255, 255, 255));
         BtnNo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnNo.setText("SIN VEHÍCULO");
@@ -64,7 +65,7 @@ public class Entrada extends javax.swing.JPanel {
                 BtnNoActionPerformed(evt);
             }
         });
-        add(BtnNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 540, 400, 150));
+        add(BtnNo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1310, 650, 360, 110));
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNoActionPerformed

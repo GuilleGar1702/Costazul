@@ -35,10 +35,5 @@ public class NodoArbol {
         this.puesto = puesto;
         this.altura = 1;
     }
-    
-    public void imprimirNodo(){
-        System.out.println(puesto + "-" + seccion + " " + nombre + " " + apellido + " C.I:" + cedula + " Matricula:" + matricula + " Marca:" + marcaVehiculo + " Color:" + colorVehiculo + " Tipo:" + tipoDeVehiculo + " Hora de Entrada:" + horaEntrada + " Hora de Salida:" + horaSalida);
-    }
-    
 }
 
