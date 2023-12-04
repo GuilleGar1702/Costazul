@@ -13,15 +13,18 @@ import java.util.Arrays;
  */
 public class ListaTiendas {
     NodoTienda primero;
-     
-     public ListaTiendas()
+     private InterfazTienda tienda;
+     public ListaTiendas(InterfazTienda tienda)
      {
          this.primero = null;
+         this.tienda=tienda;
      }
      public boolean vacio()
      {
          return this.primero == null;
      }
+     
+    
      public void agregarElemento(String Tienda, String Encargado, String Rubro, String[] Productos)
      {
          NodoTienda nuevoElemento = new NodoTienda(Tienda, Encargado, Rubro, Productos);
@@ -38,6 +41,7 @@ public class ListaTiendas {
              }
              actual.siguiente = nuevoElemento;
          }
+         
          System.out.println(Tienda);
          System.out.println(Encargado);
          System.out.println(Rubro);
@@ -73,6 +77,5 @@ public class ListaTiendas {
              contador++;           
          }
         return null;
-         
      }
 }

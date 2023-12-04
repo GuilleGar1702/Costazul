@@ -38,6 +38,7 @@ public class Entrada extends javax.swing.JPanel {
         BtnSi.setBackground(new java.awt.Color(28, 28, 28));
         BtnSi.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         BtnSi.setForeground(new java.awt.Color(255, 255, 255));
+        BtnSi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnSi.setText("CON VEHÍCULO");
         BtnSi.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnSi.addActionListener(new java.awt.event.ActionListener() {
@@ -50,9 +51,14 @@ public class Entrada extends javax.swing.JPanel {
         BtnNo.setBackground(new java.awt.Color(28, 28, 28));
         BtnNo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
         BtnNo.setForeground(new java.awt.Color(255, 255, 255));
-        BtnNo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/fondo.png"))); // NOI18N
+        BtnNo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnNo.setText("SIN VEHÍCULO");
         BtnNo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnNo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnNoMouseClicked(evt);
+            }
+        });
         BtnNo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnNoActionPerformed(evt);
@@ -62,12 +68,16 @@ public class Entrada extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNoActionPerformed
-        //abrir interfaz de tiendas
+        inicio.IniciarInterfazTienda();
     }//GEN-LAST:event_BtnNoActionPerformed
 
     private void BtnSiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSiActionPerformed
         inicio.InicioEsta();
     }//GEN-LAST:event_BtnSiActionPerformed
+
+    private void BtnNoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnNoMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnNoMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

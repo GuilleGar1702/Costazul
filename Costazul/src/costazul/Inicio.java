@@ -24,7 +24,7 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
         this.setExtendedState(this.MAXIMIZED_BOTH);
         InicioEntrada();
-        IniciarTiendas();
+        //IniciarTiendas();
     }
     
     
@@ -39,14 +39,9 @@ public class Inicio extends javax.swing.JFrame {
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
         PanelSetter(inicioEsta);
     }
-    
-    public void IniciarTiendas(){
-        try {
-            Tiendas tiendas = new Tiendas();
-            tiendas.cargarTiendas();
-        } catch (IOException ex) {
-            Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    public void IniciarInterfazTienda(){
+        InterfazTienda tiendasInter = new InterfazTienda(this);
+        PanelSetter(tiendasInter);
     }
     
     public void PanelSetter(JPanel panel){
@@ -58,6 +53,7 @@ public class Inicio extends javax.swing.JFrame {
         PanelContenido.repaint();
         PanelContenido.setOpaque(false);
         panel.setOpaque(false);
+        setResizable(false);
     }
     
     
