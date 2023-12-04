@@ -62,6 +62,34 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         ArbolVehiculos.Registro(ArbolVehiculos.raiz);
     }
     
+    /*private String verificarCedula(NodoArbol nodo){
+    }*/
+    
+    private String eliminarPuntos(String cedula){
+        String resultado = "";
+        if(cedula !=null){
+            for (int i = 0; i < cedula.length(); i++){
+                char c = cedula.charAt(i);
+                if (c != '.'){
+                resultado += c;
+            }
+            } cedula = resultado;
+            return cedula;
+        } 
+        return null;
+    }
+    
+    private boolean tieneLetra(String cedula){
+        for (int i = 0; i < cedula.length(); i++){
+            char c = cedula.charAt(i);
+            if (!Character.isDigit(c)){
+                return true;
+            }
+        }
+        return false;
+        
+    }
+    
     
 
     public void cargarNodos(){
@@ -111,6 +139,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         TFMatricula = new javax.swing.JTextField();
         TFColor = new javax.swing.JTextField();
         LblColor = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         RBSmall = new javax.swing.JRadioButton();
         RBBann = new javax.swing.JRadioButton();
@@ -133,6 +162,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFCedula.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFCedulaKeyTyped(evt);
+            }
+        });
         PDatos.add(TFCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 6, 309, 47));
 
         LblCedula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -144,6 +178,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatos.add(LblCedula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 142, -1, 53));
 
         TFNombre.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFNombreKeyTyped(evt);
+            }
+        });
         PDatos.add(TFNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 142, 309, 53));
 
         LblApellido.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -151,6 +190,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatos.add(LblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 290, -1, 57));
 
         TFApellido.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFApellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFApellidoKeyTyped(evt);
+            }
+        });
         PDatos.add(TFApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 290, 309, 49));
 
         LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -158,6 +202,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatos.add(LblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 439, -1, -1));
 
         TFMarca.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFMarca.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFMarcaKeyTyped(evt);
+            }
+        });
         PDatos.add(TFMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 444, 309, 47));
 
         LblMatricula.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -166,15 +215,29 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
 
         TFMatricula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFMatricula.setMaximumSize(new java.awt.Dimension(14, 40));
+        TFMatricula.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFMatriculaKeyTyped(evt);
+            }
+        });
         PDatos.add(TFMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 576, 309, 47));
 
         TFColor.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFColor.setMaximumSize(new java.awt.Dimension(14, 40));
+        TFColor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFColorKeyTyped(evt);
+            }
+        });
         PDatos.add(TFColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 700, 320, 50));
 
         LblColor.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblColor.setText("Color");
         PDatos.add(LblColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 696, -1, 56));
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 3, 12)); // NOI18N
+        jLabel1.setText("Nota: no colocar espacios.");
+        PDatos.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 630, -1, -1));
 
         add(PDatos, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 540, 780));
 
@@ -281,8 +344,53 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     }//GEN-LAST:event_BtnLugarMouseClicked
 
     private void BtnLugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnLugarActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_BtnLugarActionPerformed
+
+    private void TFCedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFCedulaKeyTyped
+        if (TFCedula.getText().length() >= 8) {
+            evt.consume();
+            return;
+        }
+        if (!Character.isDigit(evt.getKeyChar())){
+            evt.consume();
+        }
+        
+    }//GEN-LAST:event_TFCedulaKeyTyped
+
+    private void TFNombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFNombreKeyTyped
+        if (!Character.isAlphabetic(evt.getKeyChar())){
+            evt.consume();
+        }
+    }//GEN-LAST:event_TFNombreKeyTyped
+
+    private void TFApellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFApellidoKeyTyped
+        if (!Character.isAlphabetic(evt.getKeyChar())){
+            evt.consume();
+        }
+    }//GEN-LAST:event_TFApellidoKeyTyped
+
+    private void TFMarcaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFMarcaKeyTyped
+        if (!Character.isAlphabetic(evt.getKeyChar())){
+            evt.consume();
+        }
+    }//GEN-LAST:event_TFMarcaKeyTyped
+
+    private void TFMatriculaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFMatriculaKeyTyped
+        if (!Character.isAlphabetic(evt.getKeyChar()) && (!Character.isDigit(evt.getKeyChar()))){
+            evt.consume();
+        }
+        if (TFMatricula.getText().length() >= 6) {
+            evt.consume();
+            return;
+        }
+    }//GEN-LAST:event_TFMatriculaKeyTyped
+
+    private void TFColorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFColorKeyTyped
+        if (!Character.isAlphabetic(evt.getKeyChar())){
+            evt.consume();
+        }
+    }//GEN-LAST:event_TFColorKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -305,6 +413,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     private javax.swing.JTextField TFMarca;
     private javax.swing.JTextField TFMatricula;
     private javax.swing.JTextField TFNombre;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
