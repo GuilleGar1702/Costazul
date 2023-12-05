@@ -17,6 +17,7 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 /**
  *
  * @author Guillermo
@@ -41,6 +42,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     //public ListaEstacionamiento listaVehiculos=new ListaEstacionamiento();
     public ArbolEstacionamiento ArbolVehiculos = new ArbolEstacionamiento();
     
+    public Entrada entrada;
     public Inicio inicio;
     private RegistroPersonal persona;
     public InicioEstacionamiento(Inicio inicio, RegistroPersonal persona) {
@@ -119,6 +121,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         RBBann = new javax.swing.JRadioButton();
         RBBike = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
+        BtnVolver = new javax.swing.JButton();
         BtnLugar = new javax.swing.JButton();
         LblMarca = new javax.swing.JLabel();
         CBMarcas = new javax.swing.JComboBox<>();
@@ -251,6 +254,24 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 360, 455));
 
+        BtnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        BtnVolver.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        BtnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        BtnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
+        BtnVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnVolver.setLabel("VOLVER");
+        BtnVolver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnVolverMouseClicked(evt);
+            }
+        });
+        BtnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnVolverActionPerformed(evt);
+            }
+        });
+        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 990, 230, 80));
+
         BtnLugar.setBackground(new java.awt.Color(51, 51, 51));
         BtnLugar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         BtnLugar.setForeground(new java.awt.Color(255, 255, 255));
@@ -267,7 +288,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarActionPerformed(evt);
             }
         });
-        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 900, 320, 80));
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 920, 320, 80));
 
         LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMarca.setText("Marca");
@@ -395,6 +416,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         }else{
             tipoDeVehiculo="Sedan";
         }
+        
+        if (cedula.trim().length() == 0 || nombre.trim().length() == 0 || apellido.trim().length() == 0 || marcaVehiculo.trim().length() == 0 || colorVehiculo.trim().length() == 0){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");
+            return;
+        }
         Esta();
     }//GEN-LAST:event_BtnLugarActionPerformed
 
@@ -493,9 +519,19 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         CBMarcas.enable(true);
     }//GEN-LAST:event_RBBikeActionPerformed
 
+    private void BtnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnVolverMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnVolverMouseClicked
+
+    private void BtnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnVolverActionPerformed
+        inicio.volverEsta();
+        
+    }//GEN-LAST:event_BtnVolverActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnLugar;
+    private javax.swing.JButton BtnVolver;
     public javax.swing.JComboBox<String> CBMarcas;
     private javax.swing.ButtonGroup Grupo1;
     private javax.swing.JLabel LblApellido;

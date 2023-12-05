@@ -57,6 +57,13 @@ public class Inicio extends javax.swing.JFrame {
         PanelSetter(inicioEsta);
     }
     
+    public void volverEsta(){
+        InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this, registroPersonal);
+        Entrada irEntrada = new Entrada(this);
+        inicioEsta.setVisible(false);
+        PanelSetter(irEntrada);
+    }
+    
     public void InicioCompraPago(){
         //Este metodo es algo distinto, aca mandamos la informacion del usuario para que este de una vez en la pantalla de pago
         PantallaCompraPago InicioCompra = new PantallaCompraPago();

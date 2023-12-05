@@ -5,9 +5,14 @@
  */
 package costazul;
 
+import java.awt.Image;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 /**
  *
@@ -18,6 +23,9 @@ public class Estacionamiento extends javax.swing.JPanel {
     /**
      * Creates new form Estacionamiento
      */
+    LocalDateTime dataTime =  LocalDateTime.now();
+    DateTimeFormatter format = DateTimeFormatter.ofPattern("HH:mm");
+    String entrada = dataTime.format(format);
     private InicioEstacionamiento EstacionamientoInicio;
     public Estacionamiento(InicioEstacionamiento EstacionamientoInicio) {
         initComponents();
@@ -34,18 +42,17 @@ public class Estacionamiento extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        BtnSecA = new javax.swing.JButton();
-        BtnSecB = new javax.swing.JButton();
-        BtnSecC = new javax.swing.JButton();
-        BtnSecD = new javax.swing.JButton();
-        BtnSecE = new javax.swing.JButton();
-        BtnSecF = new javax.swing.JButton();
-        LblPuesto = new javax.swing.JLabel();
+        seccionF = new javax.swing.JLabel();
+        seccionE = new javax.swing.JLabel();
+        seccionD = new javax.swing.JLabel();
+        seccionB = new javax.swing.JLabel();
+        seccionC = new javax.swing.JLabel();
         TFPuesto = new javax.swing.JTextField();
-        LblEntrada = new javax.swing.JLabel();
-        TFEntrada = new javax.swing.JTextField();
-        LblSalida = new javax.swing.JLabel();
         TFSalida = new javax.swing.JTextField();
+        seccionA = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        LblPuesto = new javax.swing.JLabel();
+        LblSalida = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -53,106 +60,117 @@ public class Estacionamiento extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1920, 1080));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BtnSecA.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecA.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecA.setText("SECCIÓN A");
-        BtnSecA.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecA.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecAActionPerformed(evt);
+        seccionF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion f peque.png"))); // NOI18N
+        seccionF.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionFMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionFMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionFMouseExited(evt);
             }
         });
-        add(BtnSecA, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 35, 400, 115));
+        add(seccionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 40, -1, -1));
 
-        BtnSecB.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecB.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecB.setText("SECCIÓN B");
-        BtnSecB.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecBActionPerformed(evt);
+        seccionE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion e peque.png"))); // NOI18N
+        seccionE.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionEMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionEMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionEMouseExited(evt);
             }
         });
-        add(BtnSecB, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 168, 400, 115));
+        add(seccionE, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 370, -1, -1));
 
-        BtnSecC.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecC.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecC.setText("SECCIÓN C");
-        BtnSecC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecC.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecCActionPerformed(evt);
+        seccionD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion d peque.png"))); // NOI18N
+        seccionD.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionDMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionDMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionDMouseExited(evt);
             }
         });
-        add(BtnSecC, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 301, 400, 115));
+        add(seccionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 440, -1, -1));
 
-        BtnSecD.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecD.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecD.setText("SECCIÓN D");
-        BtnSecD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecD.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecDActionPerformed(evt);
+        seccionB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion b peque.png"))); // NOI18N
+        seccionB.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionBMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionBMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionBMouseExited(evt);
             }
         });
-        add(BtnSecD, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 434, 400, 115));
+        add(seccionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, -1, -1));
 
-        BtnSecE.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecE.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecE.setText("SECCIÓN E");
-        BtnSecE.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecE.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecEActionPerformed(evt);
+        seccionC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion c peque.png"))); // NOI18N
+        seccionC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionCMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionCMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionCMouseExited(evt);
             }
         });
-        add(BtnSecE, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 567, 400, 115));
+        add(seccionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 350, -1, 160));
 
-        BtnSecF.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        BtnSecF.setForeground(new java.awt.Color(255, 255, 255));
-        BtnSecF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
-        BtnSecF.setText("SECCIÓN F");
-        BtnSecF.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BtnSecF.addActionListener(new java.awt.event.ActionListener() {
+        TFPuesto.setBackground(new java.awt.Color(105, 178, 178));
+        TFPuesto.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFPuesto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSecFActionPerformed(evt);
+                TFPuestoActionPerformed(evt);
             }
         });
-        add(BtnSecF, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 700, 400, 115));
+        add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 880, 555, 40));
+
+        TFSalida.setBackground(new java.awt.Color(105, 178, 178));
+        TFSalida.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        TFSalida.setMaximumSize(new java.awt.Dimension(14, 40));
+        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 930, 555, 40));
+
+        seccionA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion a chico.png"))); // NOI18N
+        seccionA.setText("jLabel4");
+        seccionA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                seccionAMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                seccionAMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                seccionAMouseExited(evt);
+            }
+        });
+        add(seccionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/costa azul peque.png"))); // NOI18N
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, -1, -1));
 
         LblPuesto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblPuesto.setText("Puesto");
         add(LblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 880, -1, 50));
 
-        TFPuesto.setBackground(new java.awt.Color(105, 178, 178));
-        TFPuesto.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 880, 555, 40));
-
-        LblEntrada.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        LblEntrada.setText("Entrada");
-        add(LblEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 930, -1, 50));
-
-        TFEntrada.setBackground(new java.awt.Color(105, 178, 178));
-        TFEntrada.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        TFEntrada.setMaximumSize(new java.awt.Dimension(14, 40));
-        add(TFEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 932, 555, 40));
-
         LblSalida.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblSalida.setText("Salida");
-        add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 979, -1, 50));
-
-        TFSalida.setBackground(new java.awt.Color(105, 178, 178));
-        TFSalida.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        TFSalida.setMaximumSize(new java.awt.Dimension(14, 40));
-        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 985, 555, 40));
+        add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 930, -1, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoEstacionamiento.jpg"))); // NOI18N
-        jLabel3.setText("jLabel2");
         jLabel3.setMaximumSize(new java.awt.Dimension(1920, 1080));
         jLabel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jLabel3.setOpaque(true);
@@ -162,75 +180,180 @@ public class Estacionamiento extends javax.swing.JPanel {
 
     
     
-    //En todos estos giardamos las horas, puesto y seecion, enviamos la informaciona la pantalla anterior y ahi la guardamos
-    private void BtnSecAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecAActionPerformed
+    private void seccionAMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionAMouseEntered
+        ImageIcon icon = new ImageIcon("./src/costazul/visuals/rellenoaa.png");
+        seccionA.setIcon(icon);
+    }//GEN-LAST:event_seccionAMouseEntered
+
+    private void seccionAMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionAMouseExited
+        ImageIcon icon = new ImageIcon("./src/costazul/visuals/seccionachico.png");
+        seccionA.setIcon(icon);
+    }//GEN-LAST:event_seccionAMouseExited
+
+    private void seccionAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionAMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon icon = new ImageIcon("./src/costazul/visuals/seccionachico.png");
+        seccionA.setIcon(icon);
         EstacionamientoInicio.seccion='A';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
+        EstacionamientoInicio.horaEntrada= dataTime.format(format);
+        EstacionamientoInicio.horaSalida= TFSalida.getText();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecAActionPerformed
+        }
+        
+    }//GEN-LAST:event_seccionAMouseClicked
 
-    private void BtnSecBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecBActionPerformed
-        EstacionamientoInicio.seccion='B';
-        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
-        EstacionamientoInicio.addVehicle();
-        EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecBActionPerformed
+    private void TFPuestoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFPuestoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFPuestoActionPerformed
 
-    private void BtnSecCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecCActionPerformed
-        EstacionamientoInicio.seccion='C';
-        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
-        EstacionamientoInicio.addVehicle();
-        EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecCActionPerformed
-
-    private void BtnSecDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecDActionPerformed
+    private void seccionDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionDMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon icond = new ImageIcon("./src/costazul/visuals/secciondpeque.png");
+        seccionD.setIcon(icond);
         EstacionamientoInicio.seccion='D';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
+        EstacionamientoInicio.horaEntrada= entrada;
+        EstacionamientoInicio.horaSalida= TFSalida.getText();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecDActionPerformed
+        }
+    }//GEN-LAST:event_seccionDMouseClicked
 
-    private void BtnSecEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecEActionPerformed
-        EstacionamientoInicio.seccion='E';
-        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
-        EstacionamientoInicio.addVehicle();
-        EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecEActionPerformed
+    private void seccionDMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionDMouseEntered
+        ImageIcon icond = new ImageIcon("./src/costazul/visuals/rellenod.png");
+        seccionD.setIcon(icond);
+    }//GEN-LAST:event_seccionDMouseEntered
 
-    private void BtnSecFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecFActionPerformed
+    private void seccionDMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionDMouseExited
+        ImageIcon icond = new ImageIcon("./src/costazul/visuals/secciondpeque.png");
+        seccionD.setIcon(icond);
+    }//GEN-LAST:event_seccionDMouseExited
+
+    private void seccionFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionFMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon iconf = new ImageIcon("./src/costazul/visuals/seccionfpeque.png");
+        seccionF.setIcon(iconf);
         EstacionamientoInicio.seccion='F';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
-        EstacionamientoInicio.horaEntrada=TFEntrada.getText();
+        EstacionamientoInicio.horaEntrada= entrada;
+        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
+        }
+    }//GEN-LAST:event_seccionFMouseClicked
+
+    private void seccionFMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionFMouseEntered
+        ImageIcon iconf = new ImageIcon("./src/costazul/visuals/rellenof.png");
+        seccionF.setIcon(iconf);
+    }//GEN-LAST:event_seccionFMouseEntered
+
+    private void seccionFMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionFMouseExited
+        ImageIcon iconf = new ImageIcon("./src/costazul/visuals/seccionfpeque.png");
+        seccionF.setIcon(iconf);
+    }//GEN-LAST:event_seccionFMouseExited
+
+    private void seccionBMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionBMouseExited
+        ImageIcon iconb = new ImageIcon("./src/costazul/visuals/seccionbpeque.png");
+        seccionB.setIcon(iconb);
+    }//GEN-LAST:event_seccionBMouseExited
+
+    private void seccionBMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionBMouseEntered
+        ImageIcon iconb = new ImageIcon("./src/costazul/visuals/rellenob.png");
+        seccionB.setIcon(iconb);
+    }//GEN-LAST:event_seccionBMouseEntered
+
+    private void seccionBMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionBMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon iconb = new ImageIcon("./src/costazul/visuals/seccionbpeque.png");
+        seccionB.setIcon(iconb);
+        EstacionamientoInicio.seccion='B';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada= entrada;
+        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
+        }
+    }//GEN-LAST:event_seccionBMouseClicked
+
+    private void seccionEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionEMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon icone = new ImageIcon("./src/costazul/visuals/seccionepeque.png");
+        seccionE.setIcon(icone);
+        EstacionamientoInicio.seccion='E';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada= entrada;
+        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
+        }
+    }//GEN-LAST:event_seccionEMouseClicked
+
+    private void seccionEMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionEMouseEntered
+        ImageIcon icone = new ImageIcon("./src/costazul/visuals/rellenoe.png");
+        seccionE.setIcon(icone);
+    }//GEN-LAST:event_seccionEMouseEntered
+
+    private void seccionEMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionEMouseExited
+        ImageIcon icone = new ImageIcon("./src/costazul/visuals/seccionepeque.png");
+        seccionE.setIcon(icone);
+    }//GEN-LAST:event_seccionEMouseExited
+
+    private void seccionCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionCMouseClicked
+        String pue = TFPuesto.getText();
+        if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
+            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+        }else{
+        ImageIcon iconc = new ImageIcon("./src/costazul/visuals/seccioncpeque.png");
+        seccionC.setIcon(iconc);
+        EstacionamientoInicio.seccion='C';
+        EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
+        EstacionamientoInicio.horaEntrada= entrada;
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
-    }//GEN-LAST:event_BtnSecFActionPerformed
+        }
+    }//GEN-LAST:event_seccionCMouseClicked
+
+    private void seccionCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionCMouseEntered
+        ImageIcon iconc = new ImageIcon("./src/costazul/visuals/rellenoc.png");
+        seccionC.setIcon(iconc);
+    }//GEN-LAST:event_seccionCMouseEntered
+
+    private void seccionCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionCMouseExited
+        ImageIcon iconc = new ImageIcon("./src/costazul/visuals/seccioncpeque.png");
+        seccionC.setIcon(iconc);
+    }//GEN-LAST:event_seccionCMouseExited
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BtnSecA;
-    private javax.swing.JButton BtnSecB;
-    private javax.swing.JButton BtnSecC;
-    private javax.swing.JButton BtnSecD;
-    private javax.swing.JButton BtnSecE;
-    private javax.swing.JButton BtnSecF;
-    private javax.swing.JLabel LblEntrada;
     private javax.swing.JLabel LblPuesto;
     private javax.swing.JLabel LblSalida;
-    private javax.swing.JTextField TFEntrada;
     private javax.swing.JTextField TFPuesto;
     private javax.swing.JTextField TFSalida;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel seccionA;
+    private javax.swing.JLabel seccionB;
+    private javax.swing.JLabel seccionC;
+    private javax.swing.JLabel seccionD;
+    private javax.swing.JLabel seccionE;
+    private javax.swing.JLabel seccionF;
     // End of variables declaration//GEN-END:variables
 }

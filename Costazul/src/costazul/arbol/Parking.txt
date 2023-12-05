@@ -1,8 +1,6 @@
-5-B-Guiller-gar-33251561-verde-Toyota-135561-53-158-Camioneta
-10-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
-15-A-Guillermo-salazar-123456-Rojo-tesla-2222-21-21-Sedan
-25-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
-30-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
-345-A-jose-luis-55156-amarillopollito-Volkswagen-fracat-21-21-Sedan
-555-E-Guillermo-Garcia-30685065-Verde-Toyota-vau 03v-10-23-Camioneta
-1555-B-Guilletron-Garcitron-12345678-Gris-Alfa Romeo-00001-11-1-Sedan
+2-A-guillermo-garcia-12264654-amarillo-Toyota-11lk1k-07:23-5-Sedan
+6-D-javier-regnautl-30926759-perla-Toyota-jua759-07:27-10-Sedan
+10-A-javier-regnault-30926759-amarillo-Toyota-1321sa-10-12-Sedan
+33-A-guillermo-garcia-29856759-azul-Toyota-123kkl-07:22-10-Sedan
+66-A-javier-regnault-30926759-rojo-Hyundai-123a5s-07:14-22-Sedan
+105-A-javier-regnault-30926759-rojo-Toyota-jav305-07:12-30-Sedan
