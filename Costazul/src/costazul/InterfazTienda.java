@@ -313,6 +313,12 @@ public class InterfazTienda extends javax.swing.JPanel {
         }
         //calculamos el total
         total=subTotal1+subTotal2+subTotal3;
+        inicio.Encargado=LblEncargado.getText();
+        inicio.Tienda=LblTienda.getText();
+        inicio.producto1=LblProducto1.getText()+" x "+TFCantidad1.getText()+"="+String.valueOf(subTotal1);
+        inicio.producto2=LblProducto2.getText()+" x "+TFCantidad2.getText()+"="+String.valueOf(subTotal2);
+        inicio.producto3=LblProducto3.getText()+" x "+TFCantidad3.getText()+"="+String.valueOf(subTotal3);
+        inicio.totalPago=String.valueOf(total);
         subTotal1=0;subTotal2=0;subTotal3=0;
         LblTotal.setText(String.valueOf(total)+"$");
     }//GEN-LAST:event_BtnCalcularActionPerformed

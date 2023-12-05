@@ -3,5 +3,7 @@
 10-A-javier-regnault-30926759-amarillo-Toyota-1321sa-10-12-Sedan
 15-B-aaaaaaa-aaaaaaaaa-11111111-aaaa-Toyota-aaaa-08:22-25-Sedan
 33-A-guillermo-garcia-29856759-azul-Toyota-123kkl-07:22-10-Sedan
+45-A-asdgsdfg-sgfsdfg-3165561-fghdfg-Ford-gdhdf-09:47-00:00-Camioneta
 66-A-javier-regnault-30926759-rojo-Hyundai-123a5s-07:14-22-Sedan
 105-A-javier-regnault-30926759-rojo-Toyota-jav305-07:12-30-Sedan
+565-E-sdfgsgh-hgfhgf-51561654-shgfhgf-Toyota-htghst-09:44-02:00-Sedan

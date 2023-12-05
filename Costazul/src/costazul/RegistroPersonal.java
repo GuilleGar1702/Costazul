@@ -92,6 +92,7 @@ public class RegistroPersonal extends javax.swing.JPanel {
         TFApellido = new javax.swing.JTextField();
         BtnRegistrarse = new javax.swing.JButton();
         CBTiendas = new javax.swing.JComboBox<>();
+        BtnVolver = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         setForeground(new java.awt.Color(255, 255, 255));
@@ -175,6 +176,24 @@ public class RegistroPersonal extends javax.swing.JPanel {
         CBTiendas.setBorder(null);
         CBTiendas.setOpaque(false);
         add(CBTiendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 810, 510, 70));
+
+        BtnVolver.setBackground(new java.awt.Color(51, 51, 51));
+        BtnVolver.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        BtnVolver.setForeground(new java.awt.Color(255, 255, 255));
+        BtnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
+        BtnVolver.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnVolver.setLabel("VOLVER");
+        BtnVolver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnVolverMouseClicked(evt);
+            }
+        });
+        BtnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnVolverActionPerformed(evt);
+            }
+        });
+        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 960, 230, 80));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoRegistroPersonal.jpg"))); // NOI18N
         jLabel3.setText("jLabel2");
@@ -265,9 +284,19 @@ public class RegistroPersonal extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_TFApellidoKeyTyped
 
+    private void BtnVolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnVolverMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnVolverMouseClicked
+
+    private void BtnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnVolverActionPerformed
+        inicio.volverEsta();
+
+    }//GEN-LAST:event_BtnVolverActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnRegistrarse;
+    private javax.swing.JButton BtnVolver;
     public javax.swing.JComboBox<String> CBTiendas;
     private javax.swing.ButtonGroup Grupo1;
     private javax.swing.JLabel LblApellido;

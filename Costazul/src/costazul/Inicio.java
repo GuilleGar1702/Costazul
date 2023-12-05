@@ -40,7 +40,12 @@ public class Inicio extends javax.swing.JFrame {
     public String horaSalida="";
     public char seccion=' ';
     public int puesto=0;
-    
+    public String Tienda="";
+    public String Encargado="";
+    public String producto1="";
+    public String producto2="";
+    public String producto3="";
+    public String totalPago="";
     
     
     
@@ -66,7 +71,7 @@ public class Inicio extends javax.swing.JFrame {
     
     public void InicioCompraPago(){
         //Este metodo es algo distinto, aca mandamos la informacion del usuario para que este de una vez en la pantalla de pago
-        PantallaCompraPago InicioCompra = new PantallaCompraPago();
+        PantallaCompraPago InicioCompra = new PantallaCompraPago(this);
         InicioCompra.apellido=apellido;
         InicioCompra.cedula=cedula;
         InicioCompra.colorVehiculo=colorVehiculo;
@@ -78,6 +83,12 @@ public class Inicio extends javax.swing.JFrame {
         InicioCompra.puesto=puesto;
         InicioCompra.seccion=seccion;
         InicioCompra.marcaVehiculo=marcaVehiculo;
+        InicioCompra.Tienda= Tienda;
+        InicioCompra.Encargado=Encargado;
+        InicioCompra.producto1=producto1;
+        InicioCompra.producto2=producto2;
+        InicioCompra.producto3=producto3;
+        InicioCompra.totalPago=totalPago;
         PanelSetter(InicioCompra);
     }
     
