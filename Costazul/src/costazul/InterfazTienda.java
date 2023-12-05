@@ -41,6 +41,7 @@ public class InterfazTienda extends javax.swing.JPanel {
         initComponents();
         this.inicio=inicio;
         CBTiendas.removeAllItems();
+        //Cargamos las tiendas
         for(int i=0;i<3;i++){
             cargarTiendas();
         }
@@ -73,6 +74,7 @@ public class InterfazTienda extends javax.swing.JPanel {
         CBTiendas = new javax.swing.JComboBox<>();
         LblEncargado = new javax.swing.JLabel();
         LblRubro = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -141,6 +143,7 @@ public class InterfazTienda extends javax.swing.JPanel {
         LblSubTotal1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         PanelContenido.add(LblSubTotal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 260, 250, -1));
 
+        TFCantidad1.setBackground(new java.awt.Color(105, 178, 178));
         TFCantidad1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         TFCantidad1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TFCantidad1.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -150,10 +153,12 @@ public class InterfazTienda extends javax.swing.JPanel {
         });
         PanelContenido.add(TFCantidad1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 260, 100, 50));
 
+        TFCantidad2.setBackground(new java.awt.Color(105, 178, 178));
         TFCantidad2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         TFCantidad2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PanelContenido.add(TFCantidad2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, 100, 50));
 
+        TFCantidad3.setBackground(new java.awt.Color(105, 178, 178));
         TFCantidad3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         TFCantidad3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PanelContenido.add(TFCantidad3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 560, 100, 50));
@@ -226,19 +231,29 @@ public class InterfazTienda extends javax.swing.JPanel {
         CBTiendas.setBackground(new java.awt.Color(0, 153, 153));
         CBTiendas.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         CBTiendas.setForeground(new java.awt.Color(255, 255, 255));
+        CBTiendas.setBorder(null);
+        CBTiendas.setOpaque(false);
         jPanel1.add(CBTiendas, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, 510, 70));
 
         LblEncargado.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         LblEncargado.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LblEncargado.setText("Encargado");
-        jPanel1.add(LblEncargado, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 510, -1));
+        jPanel1.add(LblEncargado, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 510, -1));
 
         LblRubro.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         LblRubro.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         LblRubro.setText("Rubro");
-        jPanel1.add(LblRubro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 250, 520, -1));
+        jPanel1.add(LblRubro, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 320, 520, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 700, 310));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 700, 570));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoTienda.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        jLabel2.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jLabel2.setOpaque(true);
+        jLabel2.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
     
@@ -246,7 +261,7 @@ public class InterfazTienda extends javax.swing.JPanel {
     private void BtnEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnEntrarMouseClicked
         
     }//GEN-LAST:event_BtnEntrarMouseClicked
-
+    //dividimos la informacion de los productos de su precio y mostramos en pantalla
     private void BtnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEntrarActionPerformed
         NodoActual=listaTiendas.buscarElementos(CBTiendas.getSelectedIndex());
         Producto1 = NodoActual.Productos[0].split("_");
@@ -258,6 +273,9 @@ public class InterfazTienda extends javax.swing.JPanel {
         LblTienda.setText(NodoActual.Tienda);
         LblEncargado.setText("Encargado: "+NodoActual.Encargado);
         LblRubro.setText("Rubro: "+NodoActual.Rubro);
+        TFCantidad1.setText("");
+        TFCantidad2.setText("");
+        TFCantidad2.setText("");
     }//GEN-LAST:event_BtnEntrarActionPerformed
 
     private void TFCantidad1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFCantidad1KeyTyped
@@ -268,31 +286,35 @@ public class InterfazTienda extends javax.swing.JPanel {
     }//GEN-LAST:event_TFCantidad1KeyTyped
 
     private void BtnCalcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnCalcularMouseClicked
-        if (Integer.parseInt(TFCantidad1.getText())>0){
+        
+    }//GEN-LAST:event_BtnCalcularMouseClicked
+
+    private void BtnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalcularActionPerformed
+        //calculamos los submontos (solo si se eligio una cantidad)
+        subTotal1=0;subTotal2=0;subTotal3=0;
+        if (!TFCantidad1.getText().equalsIgnoreCase("")){
             double Precio =Integer.parseInt(Producto1[1]);
             int Cantidad=Integer.parseInt(TFCantidad1.getText());
             subTotal1=Precio*Cantidad;
             LblSubTotal1.setText(String.valueOf(subTotal1)+"$");
             
         }
-        if (Integer.parseInt(TFCantidad2.getText())>0){
+        if (!TFCantidad2.getText().equalsIgnoreCase("")){
             double Precio =Integer.parseInt(Producto2[1]);
             int Cantidad=Integer.parseInt(TFCantidad2.getText());
             subTotal2=Precio*Cantidad;
             LblSubTotal2.setText(String.valueOf(subTotal2)+"$");
         }
-        if (Integer.parseInt(TFCantidad3.getText())>0){
+        if (!TFCantidad3.getText().equalsIgnoreCase("")){
             double Precio =Integer.parseInt(Producto3[1]);
             int Cantidad=Integer.parseInt(TFCantidad3.getText());
             subTotal3=Precio*Cantidad;
             LblSubTotal3.setText(String.valueOf(subTotal3)+"$");
         }
+        //calculamos el total
         total=subTotal1+subTotal2+subTotal3;
+        subTotal1=0;subTotal2=0;subTotal3=0;
         LblTotal.setText(String.valueOf(total)+"$");
-    }//GEN-LAST:event_BtnCalcularMouseClicked
-
-    private void BtnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalcularActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_BtnCalcularActionPerformed
 
     private void BtnComprarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnComprarMouseClicked
@@ -300,10 +322,10 @@ public class InterfazTienda extends javax.swing.JPanel {
     }//GEN-LAST:event_BtnComprarMouseClicked
 
     private void BtnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnComprarActionPerformed
-        // TODO add your handling code here:
+        inicio.InicioCompraPago();
     }//GEN-LAST:event_BtnComprarActionPerformed
 
-    
+    //Cargador de tiendas (las del txt)
     public void cargarTiendas() 
     {
         try {
@@ -348,6 +370,7 @@ public class InterfazTienda extends javax.swing.JPanel {
     private javax.swing.JTextField TFCantidad2;
     private javax.swing.JTextField TFCantidad3;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 

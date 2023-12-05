@@ -27,6 +27,21 @@ public class Inicio extends javax.swing.JFrame {
         InicioEntrada();
         //IniciarTiendas();
     }
+    RegistroPersonal registroPersonal = new RegistroPersonal(this);
+    
+    public String nombre="";
+    public String apellido="";
+    public String cedula="";
+    public String matricula="";
+    public String tipoDeVehiculo="";
+    public String marcaVehiculo="";
+    public String colorVehiculo="";
+    public String horaEntrada="";
+    public String horaSalida="";
+    public char seccion=' ';
+    public int puesto=0;
+    
+    
     
     
     public void InicioEntrada(){
@@ -38,14 +53,36 @@ public class Inicio extends javax.swing.JFrame {
     
     
     public void InicioEsta(){
-        
-        InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this);
+        InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this, registroPersonal);
         PanelSetter(inicioEsta);
     }
+    
+    public void InicioCompraPago(){
+        //Este metodo es algo distinto, aca mandamos la informacion del usuario para que este de una vez en la pantalla de pago
+        PantallaCompraPago InicioCompra = new PantallaCompraPago();
+        InicioCompra.apellido=apellido;
+        InicioCompra.cedula=cedula;
+        InicioCompra.colorVehiculo=colorVehiculo;
+        InicioCompra.horaEntrada=horaEntrada;
+        InicioCompra.horaSalida=horaSalida;
+        InicioCompra.tipoDeVehiculo=tipoDeVehiculo;
+        InicioCompra.matricula=matricula;
+        InicioCompra.nombre= nombre;
+        InicioCompra.puesto=puesto;
+        InicioCompra.seccion=seccion;
+        InicioCompra.marcaVehiculo=marcaVehiculo;
+        PanelSetter(InicioCompra);
+    }
+    
     public void IniciarInterfazTienda(){
         InterfazTienda tiendasInter = new InterfazTienda(this);
         PanelSetter(tiendasInter);
     }
+    public void IniciarRegistroPersonal(){
+        
+        PanelSetter(registroPersonal);
+    }
+    
     
     public void PanelSetter(JPanel panel){
         panel.setSize(1920, 1080);

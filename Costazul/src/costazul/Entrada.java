@@ -69,7 +69,7 @@ public class Entrada extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnNoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnNoActionPerformed
-        inicio.IniciarInterfazTienda();
+        inicio.IniciarRegistroPersonal();
     }//GEN-LAST:event_BtnNoActionPerformed
 
     private void BtnSiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSiActionPerformed

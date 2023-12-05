@@ -3,5 +3,6 @@
 15-A-Guillermo-salazar-123456-Rojo-tesla-2222-21-21-Sedan
 25-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
 30-C-jose-salazar-123456-blanco-tesla-2222-21-21-Sedan
+345-A-jose-luis-55156-amarillopollito-Volkswagen-fracat-21-21-Sedan
 555-E-Guillermo-Garcia-30685065-Verde-Toyota-vau 03v-10-23-Camioneta
 1555-B-Guilletron-Garcitron-12345678-Gris-Alfa Romeo-00001-11-1-Sedan

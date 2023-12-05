@@ -46,6 +46,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         TFEntrada = new javax.swing.JTextField();
         LblSalida = new javax.swing.JLabel();
         TFSalida = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
         setMinimumSize(new java.awt.Dimension(1920, 1080));
@@ -126,35 +127,49 @@ public class Estacionamiento extends javax.swing.JPanel {
 
         LblPuesto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblPuesto.setText("Puesto");
-        add(LblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 820, -1, 56));
+        add(LblPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 880, -1, 50));
 
+        TFPuesto.setBackground(new java.awt.Color(105, 178, 178));
         TFPuesto.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 820, 557, 56));
+        add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 880, 555, 40));
 
         LblEntrada.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblEntrada.setText("Entrada");
-        add(LblEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 900, -1, 56));
+        add(LblEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 930, -1, 50));
 
+        TFEntrada.setBackground(new java.awt.Color(105, 178, 178));
         TFEntrada.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        add(TFEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 900, 557, 56));
+        TFEntrada.setMaximumSize(new java.awt.Dimension(14, 40));
+        add(TFEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 932, 555, 40));
 
         LblSalida.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblSalida.setText("Salida");
-        add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 970, -1, 56));
+        add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 979, -1, 50));
 
+        TFSalida.setBackground(new java.awt.Color(105, 178, 178));
         TFSalida.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 970, 557, 56));
+        TFSalida.setMaximumSize(new java.awt.Dimension(14, 40));
+        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 985, 555, 40));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoEstacionamiento.jpg"))); // NOI18N
+        jLabel3.setText("jLabel2");
+        jLabel3.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        jLabel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jLabel3.setOpaque(true);
+        jLabel3.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
     
     
-    
+    //En todos estos giardamos las horas, puesto y seecion, enviamos la informaciona la pantalla anterior y ahi la guardamos
     private void BtnSecAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecAActionPerformed
         EstacionamientoInicio.seccion='A';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecAActionPerformed
 
     private void BtnSecBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecBActionPerformed
@@ -163,6 +178,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecBActionPerformed
 
     private void BtnSecCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecCActionPerformed
@@ -171,6 +187,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecCActionPerformed
 
     private void BtnSecDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecDActionPerformed
@@ -179,6 +196,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecDActionPerformed
 
     private void BtnSecEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecEActionPerformed
@@ -187,6 +205,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecEActionPerformed
 
     private void BtnSecFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSecFActionPerformed
@@ -195,6 +214,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.horaEntrada=TFEntrada.getText();
         EstacionamientoInicio.horaSalida=TFSalida.getText();
         EstacionamientoInicio.addVehicle();
+        EstacionamientoInicio.Tien();
     }//GEN-LAST:event_BtnSecFActionPerformed
 
 
@@ -211,5 +231,6 @@ public class Estacionamiento extends javax.swing.JPanel {
     private javax.swing.JTextField TFEntrada;
     private javax.swing.JTextField TFPuesto;
     private javax.swing.JTextField TFSalida;
+    private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
 }

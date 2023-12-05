@@ -41,10 +41,12 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     //public ListaEstacionamiento listaVehiculos=new ListaEstacionamiento();
     public ArbolEstacionamiento ArbolVehiculos = new ArbolEstacionamiento();
     
-    private Inicio inicio;
-    public InicioEstacionamiento(Inicio inicio) {
+    public Inicio inicio;
+    private RegistroPersonal persona;
+    public InicioEstacionamiento(Inicio inicio, RegistroPersonal persona) {
         initComponents();
         this.inicio=inicio;
+        this.persona=persona;
         CrearArchivo();
         cargarNodos();
         //ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
@@ -61,9 +63,12 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         CrearArchivo();
         ArbolVehiculos.Registro(ArbolVehiculos.raiz);
     }
-    
-    
-
+    //le decimos al panel principal que abra las tiendas
+    public void Tien(){
+        InterfazTienda Tien = new InterfazTienda(inicio);
+        inicio.PanelSetter(Tien);
+    }
+    //Cargamos nodos del txt
     public void cargarNodos(){
         try {
             Path ruta= Paths.get("./src/costazul/arbol/Parking.txt");
@@ -117,6 +122,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         BtnLugar = new javax.swing.JButton();
         LblMarca = new javax.swing.JLabel();
         CBMarcas = new javax.swing.JComboBox<>();
+        jLabel3 = new javax.swing.JLabel();
 
         setForeground(new java.awt.Color(255, 255, 255));
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -133,6 +139,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         PDatos.setOpaque(false);
         PDatos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        TFCedula.setBackground(new java.awt.Color(105, 178, 178));
         TFCedula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFCedula.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -149,6 +156,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         LblCedula1.setText("Nombre");
         PDatos.add(LblCedula1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 142, -1, 53));
 
+        TFNombre.setBackground(new java.awt.Color(105, 178, 178));
         TFNombre.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFNombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -161,6 +169,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         LblApellido.setText("Apellido");
         PDatos.add(LblApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 290, -1, 57));
 
+        TFApellido.setBackground(new java.awt.Color(105, 178, 178));
         TFApellido.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFApellido.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -173,6 +182,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         LblMatricula.setText("Matrícula");
         PDatos.add(LblMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 410, -1, -1));
 
+        TFMatricula.setBackground(new java.awt.Color(105, 178, 178));
         TFMatricula.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFMatricula.setMaximumSize(new java.awt.Dimension(14, 40));
         TFMatricula.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -182,6 +192,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         });
         PDatos.add(TFMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 420, 309, 47));
 
+        TFColor.setBackground(new java.awt.Color(105, 178, 178));
         TFColor.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         TFColor.setMaximumSize(new java.awt.Dimension(14, 40));
         TFColor.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -203,6 +214,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Grupo1.add(RBSmall);
         RBSmall.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBSmall.setText("Sedan");
+        RBSmall.setOpaque(false);
         RBSmall.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RBSmallActionPerformed(evt);
@@ -213,6 +225,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Grupo1.add(RBBann);
         RBBann.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBBann.setText("Camioneta");
+        RBBann.setOpaque(false);
         RBBann.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RBBannActionPerformed(evt);
@@ -223,6 +236,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Grupo1.add(RBBike);
         RBBike.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         RBBike.setText("Motocicleta");
+        RBBike.setOpaque(false);
         RBBike.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 RBBikeActionPerformed(evt);
@@ -235,10 +249,11 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         jLabel2.setText("TIPO DE VEHÍCULO");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 19, 360, -1));
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 360, 455));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 360, 455));
 
         BtnLugar.setBackground(new java.awt.Color(51, 51, 51));
         BtnLugar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        BtnLugar.setForeground(new java.awt.Color(255, 255, 255));
         BtnLugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoBoton.jpg"))); // NOI18N
         BtnLugar.setText("SELECCIONAR LUGAR");
         BtnLugar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -252,24 +267,36 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarActionPerformed(evt);
             }
         });
-        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 900, 320, 80));
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 900, 320, 80));
 
         LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMarca.setText("Marca");
-        add(LblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 580, -1, -1));
+        add(LblMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 680, -1, -1));
 
         CBMarcas.setBackground(new java.awt.Color(0, 153, 153));
         CBMarcas.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         CBMarcas.setForeground(new java.awt.Color(255, 255, 255));
         CBMarcas.setEnabled(false);
-        add(CBMarcas, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 510, 70));
+        add(CBMarcas, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 740, 510, 70));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoRegistroEstacionamiento.jpg"))); // NOI18N
+        jLabel3.setText("jLabel2");
+        jLabel3.setMaximumSize(new java.awt.Dimension(1920, 1080));
+        jLabel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
+        jLabel3.setOpaque(true);
+        jLabel3.setPreferredSize(new java.awt.Dimension(1920, 1080));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    //Le decimos al panel principal que pase a la siguienet pantalla
     public void Esta(){
         Estacionamiento Esta = new Estacionamiento(this);
         inicio.PanelSetter(Esta);
     }
     
+    
+    //creamos el archivo enc aso de no existir
     private void CrearArchivo(){
         File registro = new File("./src/costazul/arbol/Parking.txt");
             if (!registro.exists()) {
@@ -281,6 +308,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 }
             }
     }
+    //eliminamos el archivo
     private void EliminarArchivo(){
         File registro = new File("./src/costazul/arbol/Parking.txt");
             if (registro.exists()) {
@@ -288,16 +316,35 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 System.out.println("se borro el archivo");
             }
     }
-    
+    //Añadimos el nodo al arbol
     public void addVehicle(){
         ArbolVehiculos.raiz=ArbolVehiculos.insertar(ArbolVehiculos.raiz, nombre, apellido, cedula, matricula, tipoDeVehiculo, marcaVehiculo, colorVehiculo, horaEntrada, horaSalida, seccion, puesto);
         ArbolVehiculos.iniciarPreorden(ArbolVehiculos.raiz);
         EliminarArchivo();
         CrearArchivo();
         ArbolVehiculos.Registro(ArbolVehiculos.raiz);
-        
+        //////////
+        persona.cedula=Integer.parseInt(cedula);
+        persona.nombre=nombre;
+        persona.apellido=apellido;
+        persona.addPerson();
+        persona.vehiculo=true;
+        ////////////////
+        inicio.apellido=apellido;
+        inicio.cedula=cedula;
+        inicio.colorVehiculo= colorVehiculo;
+        inicio.marcaVehiculo=marcaVehiculo;
+        inicio.matricula=matricula;
+        inicio.nombre=nombre;
+        inicio.puesto=puesto;
+        inicio.seccion=seccion;
+        inicio.tipoDeVehiculo=tipoDeVehiculo;
+        inicio.horaEntrada=horaEntrada;
+        inicio.horaSalida=horaSalida;
     }
     
+    
+    //añadimos marcas al Combo box
     private void RBSmallActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBSmallActionPerformed
         CBMarcas.removeAllItems();
         CBMarcas.addItem("Toyota");
@@ -327,20 +374,6 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         CBMarcas.enable(true);
     }//GEN-LAST:event_RBSmallActionPerformed
 
-    private boolean tieneLetra(String cedula){
-        for (int i = 0; i < cedula.length(); i++){
-            char c = cedula.charAt(i);
-            if (!Character.isDigit(c)){
-                return true;
-            }
-        }
-        return false;
-
-    }
-    
-    
-    
-    
     private void BtnLugarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnLugarMouseClicked
        
     }//GEN-LAST:event_BtnLugarMouseClicked
@@ -365,6 +398,8 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         Esta();
     }//GEN-LAST:event_BtnLugarActionPerformed
 
+    
+    //Verificadores de tecleo
     private void TFCedulaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFCedulaKeyTyped
         if (TFCedula.getText().length() >= 8) {
             evt.consume();
@@ -402,7 +437,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
             evt.consume();
         }
     }//GEN-LAST:event_TFColorKeyTyped
-
+//añadimos marcas al Combo box
     private void RBBannActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBBannActionPerformed
         CBMarcas.removeAllItems();
         CBMarcas.addItem("Ford");
@@ -424,7 +459,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         CBMarcas.addItem("Otro");
         CBMarcas.enable(true);
     }//GEN-LAST:event_RBBannActionPerformed
-
+//añadimos marcas al Combo box
     private void RBBikeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RBBikeActionPerformed
         CBMarcas.removeAllItems();
         CBMarcas.addItem("Honda");
@@ -480,6 +515,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     private javax.swing.JTextField TFMatricula;
     private javax.swing.JTextField TFNombre;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
