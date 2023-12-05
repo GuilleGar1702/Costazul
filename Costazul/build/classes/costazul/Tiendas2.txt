@@ -1,0 +1,137 @@
+Boutique de Moda-María González-Ropa de moda-Pantalon_20/Camisa_15/Abrigo_30
+Librería El Quijote-Juan Pérez-Libros-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+Joyería Brillante-Rosa Martínez-Joyas-Anillo_30/Collar_60/Pendientes_30
+Electrónica-Carlos Rodríguez-Electrónicos-Reproductor_20/Mouse_5/Teclado_6
+Panadería Delicias-Ana García-Pan y pasteles-Pan_1/Torta_2/Cachito_2.5
+Muebles-Pedro Gómez-Muebles-Silla_40/Mesa_120/Estante_200
+Deportes-José López-Artículos deportivos-Balón_25/Bate_18/Aro_14
+Música-Laura Torres-Instrumentos musicales-Guitarra_120/Batería_300/Teclado_200
+Mascotas-David Ramírez-Alimentos y accesorios para mascotas-Collar_5/Alimento_3/Juguetes_6
+Arte-Patricia Morales-Pinturas y esculturas-Cuadro_80/Escultura_350/Retrato_50
+Jardinería-Antonio Ruiz-Plantas y herramientas de jardinería-Maceta_4/Abono_5/Cactus_2
+Bicicletas-Carmen Sánchez-Bicicletas y accesorios-Cadena_6/Frenos_8/Llantas_15
+Zapatos-Roberto Díaz-Zapatos para hombres y mujeres-Zapatos_20/Botas_30/Tacones_12
+Juguetes-Teresa Castro-Juguetes para niños-Pelota_250/Rompecazas_12/Cubo de Rubik_8
+Vinos-Francisco Romero-Vinos nacionales e internacionales-Vino Blanco_25/Vino Tinto_25/Vino Artesanal_20
+Cómics-Isabel Peña-Cómics y novelas gráficas-Comic_15/Novela_12/Revista_8
+Fotografía-Luis Navarro-Cámaras y accesorios de fotografía-Camara_80/Lente_100/Bateria_25
+Cosméticos-Beatriz Torres-Maquillaje y productos de belleza-Base_6/Delineador_3/Esmalte_12
+Instrumentos-Rafael Medina-Instrumentos musicales-Guitarra_120/Batería_300/Teclado_200
+Antigüedades-Dolores Guzmán-Antigüedades y coleccionables-Espada_300/Gremlin_0/Mascara_120
+Música-Ricardo Delgado-Discos de vinilo y CDs-Thriller_10/Back in Black_10/The Dark Side of the Moon_10
+Perfumes-Alejandro Aguilar-Perfumes y fragancias-Colonia_8/Perfume_40/Esencia_22
+Ropa Infantil-Gabriela Cordero-Ropa para niños-Pantalon_20/Camisa_15/Abrigo_30
+Materiales de Construcción-Fernando Mendoza-Materiales de construcción-Cemento_10/Tubo_2/Herramienta_4
+Productos Naturales-Claudia Ríos-Productos naturales y orgánicos-Remedios_3/Suplementos_8/Psicoactivos_15
+Artículos de Cocina-Sergio Castillo-Utensilios y electrodomésticos de cocina-Cafetera_35/Licuadora_40/Tostador_22
+Ropa Deportiva-Adriana Guerra-Ropa y accesorios deportivos-Pantalon_20/Camisa_15/Abrigo_30
+Artículos de Pesca-Ricardo Paredes-Artículos de pesca-Caña_40/Nylon_8/Cebo_5
+Productos Veganos-Patricia Canto-Alimentos y productos veganos-Remedios_3/Suplementos_8/Psicoactivos_15
+Artículos de Camping-Roberto Solís-Artículos de camping y senderismo-Tienda_160/Repelente_8/Botas_40
+Artículos de Belleza-Lourdes Peña-Productos de belleza y cuidado personal-Base_6/Delineador_3/Esmalte_12
+Lencería-Guillermo García-Lencería-Pieza Individual_15/Body_18/Bañador_10
+Artículos de Oficina-Alberto Mora-Artículos de oficina-Papel_2/Lapicero_1/Grapas_1.5
+Artículos de Fiesta-Susana Ponce-Artículos de fiesta-Vasos_3/Decoraciones_5/Caña_8
+Artículos de Baño-Jorge Soto-Artículos de baño-Cortina_7/Ceramicas_3/Llaves_4
+Artículos de Jardín-Guillermo Núñez-Artículos de jardín-Maceta_4/Abono_5/Cactus_2
+Artículos de Cocina-Rosa Cervantes-Artículos de cocina-Olla_10/Sarten_15/Cubiertos_8
+Artículos de Decoración-Francisco Rojas-Artículos de decoración-Cuadro_80/Escultura_350/Retrato_50
+Artículos de Limpieza-Patricia Guzmán-Artículos de limpieza-Esponja_2/Mopa_4/Jabon_1
+Artículos de Mascotas-Roberto Aguilar-Artículos de mascotas-Collar_5/Alimento_3/Juguetes_6
+Artículos de Papelería-Gabriela Mendoza-Artículos de papelería-Papel_2/Lapicero_1/Grapas_1.5
+Artículos de Pesca-Sergio Ríos-Artículos de pesca-Caña_40/Nylon_8/Cebo_5
+Artículos de Fotografía-Lourdes Castillo-Artículos de fotografía-Camara_80/Lente_100/Bateria_25
+Artículos de Belleza-Ricardo Solís-Artículos de belleza-Base_6/Delineador_3/Esmalte_12
+Artículos de Camping-Alejandro Peña-Artículos de camping-Tienda_160/Repelente_8/Botas_40
+Artículos de Deportes-Claudia Cordero-Artículos de deportes-Balón_25/Bate_18/Aro_14
+Artículos de Música-Fernando Paredes-Artículos de música-Guitarra_120/Batería_300/Teclado_200
+Artículos de Viaje-Teresa Canto-Artículos de viaje-Maleta_65/GPS_120/PasaporteSospechoso_0
+Artículos de Yoga-Roberto Delgado-Artículos de yoga-Manta_4/Pelota_14/AudioLibro_7
+Artículos de Meditación-Patricia Ruiz-Artículos de meditación-Manta_4/Pelota_14/AudioLibro_7
+La Casa del Pan-Juan Pérez-Panadería y pastelería-Pan_1/Torta_2/Cachito_2.5
+El Jardín de las Flores-María González-Venta de flores y plantas-Maceta_4/Abono_5/Cactus_2
+El Rincón del Libro-Carlos Rodríguez-Librería y papelería-Lápiz_1/Borrador_1/Sacapuntas_2
+Sabores del Mundo-Ana Martínez-Alimentos internacionales-Cerveza_2/Queso_3/Dulces_2
+La Boutique de la Moda-Pedro Gómez-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+El Taller del Arte-Carmen Morales-Materiales de arte y clases de pintura-Cuadro_80/Escultura_350/Retrato_50
+La Joyería Brillante-Luis Guzmán-Joyería fina y relojes-Anillo_30/Collar_60/Pendientes_30
+El Mercado de la Fruta-Rosa Díaz-Frutas y verduras frescas-Fruta_3/Vegetal_2/Verdura_1
+La Tienda de los Juguetes-José Ramírez-Juguetes y juegos para niños-Pelota_5/Rompecazas_12/Cubo de Rubik_8
+El Mundo de la Electrónica-Teresa Herrera-Electrónica y accesorios-Reproductor_20/Mouse_5/Teclado_6
+El Bazar de las Especias-Antonio Méndez-Especias y condimentos-Paprica_3/Orégano_2/Pimienta_2
+La Tienda del Deporte-Patricia Torres-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo del Vino-Francisco Castro-Vinos y licores-Vino Blanco_25/Vino Tinto_25/Vino Artesanal_20
+La Casa de la Música-Laura Ortega-Instrumentos musicales y clases de música-Guitarra_120/Batería_300/Teclado_200
+El Rincón del Gourmet-Sergio Peña-Alimentos gourmet y delicatessen-Cerveza_2/Queso_3/Dulce_2
+La Tienda de los Sueños-Isabel Ríos-Colchones y ropa de cama-Sabana_4/Cobertor_8/Almohada_5
+El Mundo de la Belleza-Alejandro Cordero-Cosméticos y productos de belleza-Base_6/Delineador_3/Esmalte_12
+La Tienda del Hogar-Teresa Aguirre-Muebles y decoración para el hogar-Cuadro_80/Escultura_350/Retrato_50
+El Rincón de la Salud-Guillermo Mendoza-Productos naturales y suplementos-Remedios_3/Suplementos_8/Psicoactivos_15
+La Boutique del Bebé-Carmen Paredes-Ropa y accesorios para bebés-Pantalon_8/Camisa_5/Abrigo_3
+El Mundo de la Fotografía-Roberto Silva-Cámaras y accesorios de fotografía-Camara_80/Lente_100/Bateria_25
+La Tienda del Viajero-Susana Navarro-Artículos de viaje y equipaje-Maleta_65/GPS_120/PasaporteSospechoso_0
+El Rincón del Café-Fernando Guerra-Café y tés-Café Indú_7/Café Colombiano_5/Café Venezolano_8
+La Casa de la Tecnología-Beatriz Romero-Electrónica y tecnología-Reproductor_20/Mouse_5/Teclado_6
+El Mundo de los Videojuegos-Carlos Vargas-Videojuegos y consolas-PS3_180/PS4_350/PS5_500
+La Tienda de las Mascotas-Rosa Soto-Alimentos y accesorios para mascotas-Collar_5/Alimento_3/Juguetes_6
+El Rincón de la Joyería-Juan Delgado-Joyería y relojes-Anillo_30/Collar_60/Pendientes_30
+La Casa de los Perfumes-Patricia Cisneros-Perfumes y fragancias-Colonia_8/Perfume_40/Esencia_22
+El Mundo de la Moda-Sergio Ponce-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Tienda del Arte-Isabel Solís-Materiales de arte y clases de pintura-Cuadro_80/Escultura_350/Retrato_50
+Como Tan Muchachos-Benson Dunwoody-Dulces y golosinas-Gomitas_1/Mentas_1/Pal de Chicles_0
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla_5/Mesa_80/Estante_200
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro_12/Como Entrenar a Tu Dragon_12/Jujutsu Kaisen_12
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla_10/Sarten_15/Cubiertos_8
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base_6/Delineador_3/Esmalte_12
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota_5/Rompecazas_12/Cubo de Rubik_8
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra_120/Batería_300/Teclado_200
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos_20/Botas_30/Tacones_12
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor_20/Mouse_5/Teclado_6
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar_5/Alimento_3/Juguetes_6
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo_30/Collar_60/Pendientes_30
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia_8/Perfume_40/Esencia_22
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro_80/Escultura_350/Retrato_50
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo de los Dulces-Alberto Rangel-Dulces y golosinas-Gomitas_1/Mentas_1/Pal de Chicles_0
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla_5/Mesa_80/Estante_200
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro_12/Como Entrenar a Tu Dragon_12/Jujutsu Kaisen_12
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla_10/Sarten_15/Cubiertos_8
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base_6/Delineador_3/Esmalte_12
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota_250/Rompecazas_12/Cubo de Rubik_8
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra_120/Batería_300/Teclado_200
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos_20/Botas_30/Tacones_12
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor_20/Mouse_5/Teclado_6
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar_5/Alimento_3/Juguetes_6
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo_30/Collar_60/Pendientes_30
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia_8/Perfume_40/Esencia_22
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro_80/Escultura_350/Retrato_50
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo de los Dulces-Alberto Rangel-Dulces y golosinas-Gomitas_1/Mentas_1/Pal de Chicles_0
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla_5/Mesa_80/Estante_200
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro_12/Como Entrenar a Tu Dragon_12/Jujutsu Kaisen_12
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón_25/Bate_18/Aro_14
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla_10/Sarten_15/Cubiertos_8
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base_6/Delineador_3/Esmalte_12
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota_250/Rompecazas_12/Cubo de Rubik_8
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra_120/Batería_300/Teclado_200
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos_20/Botas_30/Tacones_12
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor_20/Mouse_5/Teclado_6
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar_5/Alimento_3/Juguetes_6
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo_30/Collar_60/Pendientes_30
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia_8/Perfume_40/Esencia_22
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon_20/Camisa_15/Abrigo_30
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro_80/Escultura_350/Retrato_50
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista_14/Viaje Al Centro de la Tierra_12/Las Crónicas de Spiderwick_16
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón_25/Bate_18/Aro_14

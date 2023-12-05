@@ -48,11 +48,12 @@ public class Estacionamiento extends javax.swing.JPanel {
         seccionB = new javax.swing.JLabel();
         seccionC = new javax.swing.JLabel();
         TFPuesto = new javax.swing.JTextField();
-        TFSalida = new javax.swing.JTextField();
         seccionA = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         LblPuesto = new javax.swing.JLabel();
         LblSalida = new javax.swing.JLabel();
+        CBSalida = new javax.swing.JComboBox<>();
+        LblTitulo = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         setMaximumSize(new java.awt.Dimension(1920, 1080));
@@ -72,7 +73,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionFMouseExited(evt);
             }
         });
-        add(seccionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 40, -1, -1));
+        add(seccionF, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 240, -1, -1));
 
         seccionE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion e peque.png"))); // NOI18N
         seccionE.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -86,7 +87,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionEMouseExited(evt);
             }
         });
-        add(seccionE, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 370, -1, -1));
+        add(seccionE, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 570, -1, -1));
 
         seccionD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion d peque.png"))); // NOI18N
         seccionD.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -100,7 +101,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionDMouseExited(evt);
             }
         });
-        add(seccionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 440, -1, -1));
+        add(seccionD, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, -1, -1));
 
         seccionB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion b peque.png"))); // NOI18N
         seccionB.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -114,7 +115,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionBMouseExited(evt);
             }
         });
-        add(seccionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 340, -1, -1));
+        add(seccionB, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 540, -1, -1));
 
         seccionC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion c peque.png"))); // NOI18N
         seccionC.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -128,7 +129,7 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionCMouseExited(evt);
             }
         });
-        add(seccionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 350, -1, 160));
+        add(seccionC, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 550, -1, 160));
 
         TFPuesto.setBackground(new java.awt.Color(105, 178, 178));
         TFPuesto.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
@@ -137,12 +138,12 @@ public class Estacionamiento extends javax.swing.JPanel {
                 TFPuestoActionPerformed(evt);
             }
         });
+        TFPuesto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                TFPuestoKeyTyped(evt);
+            }
+        });
         add(TFPuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 880, 555, 40));
-
-        TFSalida.setBackground(new java.awt.Color(105, 178, 178));
-        TFSalida.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        TFSalida.setMaximumSize(new java.awt.Dimension(14, 40));
-        add(TFSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 930, 555, 40));
 
         seccionA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/seccion a chico.png"))); // NOI18N
         seccionA.setText("jLabel4");
@@ -157,10 +158,10 @@ public class Estacionamiento extends javax.swing.JPanel {
                 seccionAMouseExited(evt);
             }
         });
-        add(seccionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 150, -1));
+        add(seccionA, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 310, 150, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/visuals/costa azul peque.png"))); // NOI18N
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, -1, -1));
 
         LblPuesto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblPuesto.setText("Puesto");
@@ -170,11 +171,22 @@ public class Estacionamiento extends javax.swing.JPanel {
         LblSalida.setText("Salida");
         add(LblSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 930, -1, 50));
 
+        CBSalida.setBackground(new java.awt.Color(0, 153, 153));
+        CBSalida.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        CBSalida.setForeground(new java.awt.Color(255, 255, 255));
+        CBSalida.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "00:00", "00:30", "01:00", "01:30", "02:00", "02:30", "03:00", "03:30", "04:00", "04:30", "05:00", "05:30", "06:00", "06:30", "07:00", "07:30", "08:00", "08:30", "09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30", "19:00", "19:30", "20:00", "20:30", "21:00", "21:30", "22:00", "22:30", "23:00", "23:30" }));
+        CBSalida.setBorder(null);
+        CBSalida.setOpaque(false);
+        add(CBSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 940, 560, 40));
+
+        LblTitulo.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        LblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        LblTitulo.setText("ELIJA SU UBICACIÓN");
+        LblTitulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        add(LblTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 1920, -1));
+
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoEstacionamiento.jpg"))); // NOI18N
-        jLabel3.setMaximumSize(new java.awt.Dimension(1920, 1080));
-        jLabel3.setMinimumSize(new java.awt.Dimension(1920, 1080));
         jLabel3.setOpaque(true);
-        jLabel3.setPreferredSize(new java.awt.Dimension(1920, 1080));
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -200,7 +212,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='A';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= dataTime.format(format);
-        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.horaSalida= (String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -221,7 +233,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='D';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= entrada;
-        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.horaSalida= (String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -247,7 +259,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='F';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= entrada;
-        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.horaSalida= (String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -283,7 +295,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='B';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= entrada;
-        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.horaSalida= (String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -299,7 +311,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='E';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= entrada;
-        EstacionamientoInicio.horaSalida= TFSalida.getText();
+        EstacionamientoInicio.horaSalida= (String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -325,7 +337,7 @@ public class Estacionamiento extends javax.swing.JPanel {
         EstacionamientoInicio.seccion='C';
         EstacionamientoInicio.puesto=Integer.parseInt(TFPuesto.getText());
         EstacionamientoInicio.horaEntrada= entrada;
-        EstacionamientoInicio.horaSalida=TFSalida.getText();
+        EstacionamientoInicio.horaSalida=(String)CBSalida.getSelectedItem();
         EstacionamientoInicio.addVehicle();
         EstacionamientoInicio.Tien();
         }
@@ -341,12 +353,25 @@ public class Estacionamiento extends javax.swing.JPanel {
         seccionC.setIcon(iconc);
     }//GEN-LAST:event_seccionCMouseExited
 
+    private void TFPuestoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TFPuestoKeyTyped
+        if (!Character.isDigit(evt.getKeyChar())){
+            evt.consume();
+        }
+        if (!TFPuesto.getText().equalsIgnoreCase("")){
+            if (Integer.parseInt(TFPuesto.getText())>249){
+                TFPuesto.setText("");
+            }
+        }
+            
+    }//GEN-LAST:event_TFPuestoKeyTyped
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JComboBox<String> CBSalida;
     private javax.swing.JLabel LblPuesto;
     private javax.swing.JLabel LblSalida;
+    private javax.swing.JLabel LblTitulo;
     private javax.swing.JTextField TFPuesto;
-    private javax.swing.JTextField TFSalida;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel seccionA;

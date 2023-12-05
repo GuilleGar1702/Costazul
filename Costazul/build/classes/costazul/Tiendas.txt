@@ -1,0 +1,137 @@
+Boutique de Moda-María González-Ropa de moda-Pantalon/Camisa/Abrigo
+Librería El Quijote-Juan Pérez-Libros-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+Joyería Brillante-Rosa Martínez-Joyas-Anillo/Collar/Pendientes
+Electrónica-Carlos Rodríguez-Electrónicos-Reproductor/Mouse/Teclado
+Panadería Delicias-Ana García-Pan y pasteles-Pan/Torta/Cachito
+Muebles-Pedro Gómez-Muebles-Silla/Mesa/Estante
+Deportes-José López-Artículos deportivos-Balón/Bate/Aro
+Música-Laura Torres-Instrumentos musicales-Guitarra/Batería/Teclado
+Mascotas-David Ramírez-Alimentos y accesorios para mascotas-Collar/Alimento/Juguetes
+Arte-Patricia Morales-Pinturas y esculturas-Cuadro/Escultura/Retrato
+Jardinería-Antonio Ruiz-Plantas y herramientas de jardinería-Maceta/Abono/Cactus
+Bicicletas-Carmen Sánchez-Bicicletas y accesorios-Cadena/Frenos/Llantas
+Zapatos-Roberto Díaz-Zapatos para hombres y mujeres-Zapatos/Botas/Tacones
+Juguetes-Teresa Castro-Juguetes para niños-Pelota/Rompecazas/Cubo de Rubik
+Vinos-Francisco Romero-Vinos nacionales e internacionales-Vino Blanco/Vino Tinto/Vino Artesanal
+Cómics-Isabel Peña-Cómics y novelas gráficas-Comic/Novela/Revista
+Fotografía-Luis Navarro-Cámaras y accesorios de fotografía-Camara/Lente/Bateria
+Cosméticos-Beatriz Torres-Maquillaje y productos de belleza-Base/Delineador/Esmalte
+Instrumentos-Rafael Medina-Instrumentos musicales-Guitarra/Batería/Teclado
+Antigüedades-Dolores Guzmán-Antigüedades y coleccionables-Espada/Gremlin/Mascara
+Música-Ricardo Delgado-Discos de vinilo y CDs-Thriller/Back in Black/The Dark Side of the Moon
+Perfumes-Alejandro Aguilar-Perfumes y fragancias-Colonia/Perfume/Esencia
+Ropa Infantil-Gabriela Cordero-Ropa para niños-Pantalon/Camisa/Abrigo
+Materiales de Construcción-Fernando Mendoza-Materiales de construcción-Cemento/Tubo/Herramienta
+Productos Naturales-Claudia Ríos-Productos naturales y orgánicos-Remedios/Suplementos/Psicoactivos
+Artículos de Cocina-Sergio Castillo-Utensilios y electrodomésticos de cocina-Cafetera/Licuadora/Tostador
+Ropa Deportiva-Adriana Guerra-Ropa y accesorios deportivos-Pantalon/Camisa/Abrigo
+Artículos de Pesca-Ricardo Paredes-Artículos de pesca-Caña/Nylon/Cebo
+Productos Veganos-Patricia Canto-Alimentos y productos veganos-Remedios/Suplementos/Psicoactivos
+Artículos de Camping-Roberto Solís-Artículos de camping y senderismo-Tienda/Repelente/Botas
+Artículos de Belleza-Lourdes Peña-Productos de belleza y cuidado personal-Base/Delineador/Esmalte
+Lencería-Guillermo García-Lencería-Pieza Individual/Body/Bañador
+Artículos de Oficina-Alberto Mora-Artículos de oficina-Papel/Lapicero/Grapas
+Artículos de Fiesta-Susana Ponce-Artículos de fiesta-Vasos/Decoraciones/Caña
+Artículos de Baño-Jorge Soto-Artículos de baño-Cortina/Ceramicas/Llaves
+Artículos de Jardín-Guillermo Núñez-Artículos de jardín-Maceta/Abono/Cactus
+Artículos de Cocina-Rosa Cervantes-Artículos de cocina-Olla/Sarten/Cubiertos
+Artículos de Decoración-Francisco Rojas-Artículos de decoración-Cuadro/Escultura/Retrato
+Artículos de Limpieza-Patricia Guzmán-Artículos de limpieza-Esponja/Mopa/Jabon
+Artículos de Mascotas-Roberto Aguilar-Artículos de mascotas-Collar/Alimento/Juguetes
+Artículos de Papelería-Gabriela Mendoza-Artículos de papelería-Papel/Lapicero/Grapas
+Artículos de Pesca-Sergio Ríos-Artículos de pesca-Caña/Nylon/Cebo
+Artículos de Fotografía-Lourdes Castillo-Artículos de fotografía-Camara/Lente/Bateria
+Artículos de Belleza-Ricardo Solís-Artículos de belleza-Base/Delineador/Esmalte
+Artículos de Camping-Alejandro Peña-Artículos de camping-Tienda/Repelente/Botas
+Artículos de Deportes-Claudia Cordero-Artículos de deportes-Balón/Bate/Aro
+Artículos de Música-Fernando Paredes-Artículos de música-Guitarra/Batería/Teclado
+Artículos de Viaje-Teresa Canto-Artículos de viaje-Maleta/GPS/PasaporteSospechoso
+Artículos de Yoga-Roberto Delgado-Artículos de yoga-Manta/Pelota/AudioLibro
+Artículos de Meditación-Patricia Ruiz-Artículos de meditación-Manta/Pelota/AudioLibro
+La Casa del Pan-Juan Pérez-Panadería y pastelería-Pan/Torta/Cachito
+El Jardín de las Flores-María González-Venta de flores y plantas-Maceta/Abono/Cactus
+El Rincón del Libro-Carlos Rodríguez-Librería y papelería-Lápiz/Borrador/Sacapuntas
+Sabores del Mundo-Ana Martínez-Alimentos internacionales-Cerveza/Queso/Dulces
+La Boutique de la Moda-Pedro Gómez-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+El Taller del Arte-Carmen Morales-Materiales de arte y clases de pintura-Cuadro/Escultura/Retrato
+La Joyería Brillante-Luis Guzmán-Joyería fina y relojes-Anillo/Collar/Pendientes
+El Mercado de la Fruta-Rosa Díaz-Frutas y verduras frescas-Fruta/Vegetal/Verdura
+La Tienda de los Juguetes-José Ramírez-Juguetes y juegos para niños-Pelota/Rompecazas/Cubo de Rubik
+El Mundo de la Electrónica-Teresa Herrera-Electrónica y accesorios-Reproductor/Mouse/Teclado
+El Bazar de las Especias-Antonio Méndez-Especias y condimentos-Paprica/Orégano
+La Tienda del Deporte-Patricia Torres-Artículos deportivos-Balón/Bate/Aro
+El Mundo del Vino-Francisco Castro-Vinos y licores-Vino Blanco/Vino Tinto/Vino Artesanal
+La Casa de la Música-Laura Ortega-Instrumentos musicales y clases de música-Guitarra/Batería/Teclado
+El Rincón del Gourmet-Sergio Peña-Alimentos gourmet y delicatessen-Cerveza/Queso/Dulces
+La Tienda de los Sueños-Isabel Ríos-Colchones y ropa de cama-Sabana/Cobertor/Almohada
+El Mundo de la Belleza-Alejandro Cordero-Cosméticos y productos de belleza-Base/Delineador/Esmalte
+La Tienda del Hogar-Teresa Aguirre-Muebles y decoración para el hogar-Cuadro/Escultura/Retrato
+El Rincón de la Salud-Guillermo Mendoza-Productos naturales y suplementos-Remedios/Suplementos/Psicoactivos
+La Boutique del Bebé-Carmen Paredes-Ropa y accesorios para bebés-Pantalon/Camisa/Abrigo
+El Mundo de la Fotografía-Roberto Silva-Cámaras y accesorios de fotografía-Camara/Lente/Bateria
+La Tienda del Viajero-Susana Navarro-Artículos de viaje y equipaje-Maleta/GPS/PasaporteSospechoso
+El Rincón del Café-Fernando Guerra-Café y tés-Café Indú/Café Colombiano/Café Venezolano
+La Casa de la Tecnología-Beatriz Romero-Electrónica y tecnología-Reproductor/Mouse/Teclado
+El Mundo de los Videojuegos-Carlos Vargas-Videojuegos y consolas-PS3/PS4/PS5
+La Tienda de las Mascotas-Rosa Soto-Alimentos y accesorios para mascotas-Collar/Alimento/Juguetes
+El Rincón de la Joyería-Juan Delgado-Joyería y relojes-Anillo/Collar/Pendientes
+La Casa de los Perfumes-Patricia Cisneros-Perfumes y fragancias-Colonia/Perfume/Esencia
+El Mundo de la Moda-Sergio Ponce-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Tienda del Arte-Isabel Solís-Materiales de arte y clases de pintura-Cuadro/Escultura/Retrato
+Como Tan Muchachos-Benson Dunwoody-Dulces y golosinas-Gomitas/Mentas/Pal de Chicles
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla/Mesa/Estante
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro/Como Entrenar a Tu Dragon/Jujutsu Kaisen
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón/Bate/Aro
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla/Sarten/Cubiertos
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base/Delineador/Esmalte
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota/Rompecazas/Cubo de Rubik
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra/Batería/Teclado
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos/Botas/Tacones
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor/Mouse/Teclado
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar/Alimento/Juguetes
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo/Collar/Pendientes
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia/Perfume/Esencia
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro/Escultura/Retrato
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón/Bate/Aro
+El Mundo de los Dulces-Alberto Rangel-Dulces y golosinas-Gomitas/Mentas/Pal de Chicles
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla/Mesa/Estante
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro/Como Entrenar a Tu Dragon/Jujutsu Kaisen
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón/Bate/Aro
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla/Sarten/Cubiertos
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base/Delineador/Esmalte
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota/Rompecazas/Cubo de Rubik
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra/Batería/Teclado
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos/Botas/Tacones
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor/Mouse/Teclado
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar/Alimento/Juguetes
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo/Collar/Pendientes
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia/Perfume/Esencia
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro/Escultura/Retrato
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón/Bate/Aro
+El Mundo de los Dulces-Alberto Rangel-Dulces y golosinas-Gomitas/Mentas/Pal de Chicles
+La Casa de los Muebles-Gabriela Mora-Muebles para el hogar-Silla/Mesa/Estante
+El Rincón del Cine-Ricardo Vera-Películas y series en DVD-El Planeta del Tesoro/Como Entrenar a Tu Dragon/Jujutsu Kaisen
+La Tienda de los Deportes-Claudia Páez-Artículos deportivos-Balón/Bate/Aro
+El Mundo de la Cocina-Ernesto Parra-Utensilios de cocina-Olla/Sarten/Cubiertos
+El Rincón de la Belleza-Gustavo Cárdenas-Productos de belleza y cuidado personal-Base/Delineador/Esmalte
+La Tienda de los Libros-Mariana Peña-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+El Mundo de la Moda-Alejandro Ríos-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa de los Juguetes-Patricia Méndez-Juguetes y juegos para niños-Pelota/Rompecazas/Cubo de Rubik
+El Rincón de la Música-Roberto Castro-Instrumentos musicales y discos-Guitarra/Batería/Teclado
+La Tienda de los Zapatos-Susana Ortega-Zapatos y calzado-Zapatos/Botas/Tacones
+El Mundo de la Electrónica-Fernando Peña-Electrónica y tecnología-Reproductor/Mouse/Teclado
+La Casa de las Mascotas-Beatriz Rodríguez-Alimentos y accesorios para mascotas-Collar/Alimento/Juguetes
+El Rincón de la Joyería-Carlos González-Joyería y relojes-Anillo/Collar/Pendientes
+La Tienda de los Perfumes-Teresa Martínez-Perfumes y fragancias-Colonia/Perfume/Esencia
+El Mundo de la Moda-Sergio Gómez-Ropa y accesorios de moda-Pantalon/Camisa/Abrigo
+La Casa del Arte-Isabel Morales-Materiales de arte y clases de pintura-Cuadro/Escultura/Retrato
+El Rincón de los Libros-Guillermo Guzmán-Libros y revistas-El Alquimista/Viaje Al Centro de la Tierra/Las Crónicas de Spiderwick
+La Tienda de los Deportes-Carmen Díaz-Artículos deportivos-Balón/Bate/Aro
