@@ -205,7 +205,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionAMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos"); 
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon icon = new ImageIcon("./src/costazul/visuals/seccionachico.png");
         seccionA.setIcon(icon);
@@ -226,7 +230,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionDMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionDMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos");  
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon icond = new ImageIcon("./src/costazul/visuals/secciondpeque.png");
         seccionD.setIcon(icond);
@@ -252,7 +260,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionFMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionFMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos");    
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon iconf = new ImageIcon("./src/costazul/visuals/seccionfpeque.png");
         seccionF.setIcon(iconf);
@@ -288,7 +300,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionBMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionBMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos");   
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon iconb = new ImageIcon("./src/costazul/visuals/seccionbpeque.png");
         seccionB.setIcon(iconb);
@@ -304,7 +320,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionEMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionEMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos"); 
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon icone = new ImageIcon("./src/costazul/visuals/seccionepeque.png");
         seccionE.setIcon(icone);
@@ -330,7 +350,11 @@ public class Estacionamiento extends javax.swing.JPanel {
     private void seccionCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionCMouseClicked
         String pue = TFPuesto.getText();
         if (EstacionamientoInicio.horaSalida.trim().length() == 0 || pue.trim().length() == 0 ){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");            
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos");  
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
         }else{
         ImageIcon iconc = new ImageIcon("./src/costazul/visuals/seccioncpeque.png");
         seccionC.setIcon(iconc);

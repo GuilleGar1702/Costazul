@@ -77,7 +77,6 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
             List<String> listaPajuaTiendas=Files.readAllLines(ruta);
             String[] xd= new String[listaPajuaTiendas.size()];
             listaPajuaTiendas.toArray(xd);
-            //nodo.puesto+"-"+nodo.seccion+"-"+nodo.nombre+"-"+nodo.apellido+"-"+nodo.cedula+"-"+nodo.colorVehiculo+"-"+nodo.marcaVehiculo+"-"+nodo.matricula+"-"+nodo.horaEntrada+"-"+nodo.horaSalida+"-"+nodo.tipoDeVehiculo+"\n";
             for (String x:xd){
                 String[] atributos = x.split("-");
                 nombre=atributos[2];
@@ -422,7 +421,6 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
             FaltaDeDatos falta = new FaltaDeDatos();
             falta.setLocationRelativeTo(null);
             falta.setResizable(false);
-            //falta.setUndecorated(false);
             falta.setVisible(true);
             return;
         }

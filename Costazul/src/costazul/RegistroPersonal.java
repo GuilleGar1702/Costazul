@@ -252,12 +252,18 @@ public class RegistroPersonal extends javax.swing.JPanel {
         nombre=TFNombre.getText();
         apellido=TFApellido.getText();
         addPerson();
-        
-        Usuario.apellido=apellido;
-        Usuario.nombre=nombre;
-        Usuario.cedula=String.valueOf(cedula);
-        
-        Tien();
+        if (String.valueOf(cedula).trim().length() == 0 || nombre.trim().length() == 0 || apellido.trim().length() == 0 ){
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            falta.setVisible(true);
+        }
+        else{
+            Usuario.apellido=apellido;
+            Usuario.nombre=nombre;
+            Usuario.cedula=String.valueOf(cedula);
+            Tien();
+        }
     }//GEN-LAST:event_BtnRegistrarseActionPerformed
 
     

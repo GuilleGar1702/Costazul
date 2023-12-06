@@ -320,7 +320,6 @@ public class PantallaCompraPago extends javax.swing.JPanel {
             String registro= Usuario.nombre+"-"+Usuario.apellido+"-"+Usuario.cedula+"-"+Usuario.colorVehiculo+"-"+Usuario.marcaVehiculo+"-"+Usuario.matricula+"-"+Usuario.horaEntrada+"-"+Usuario.horaSalida+"-"+Usuario.tipoDeVehiculo+"-"+Usuario.puesto+"-"+Usuario.seccion+"-"+Usuario.Tienda+"-"+Usuario.Encargado+"-"+Usuario.producto1+"-"+Usuario.producto2+"-"+Usuario.producto3+"-"+Usuario.totalPago+"\n";////////////////////////////////////////
             Files.write(Paths.get("./src/costazul/arbol/Compras.txt"), registro.getBytes(), StandardOpenOption.APPEND);  
             inicio.InicioFinal();
-            //JOptionPane.showMessageDialog(this, "Compra Realizada con exito! \n \n Somos Parque Costazul \n Gracias por preferirnos");
         } catch (IOException ex) {
             Logger.getLogger(PantallaCompraPago.class.getName()).log(Level.SEVERE, null, ex);
         } 
