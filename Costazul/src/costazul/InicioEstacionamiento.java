@@ -270,7 +270,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnVolverActionPerformed(evt);
             }
         });
-        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 990, 230, 80));
+        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 970, 230, 80));
 
         BtnLugar.setBackground(new java.awt.Color(51, 51, 51));
         BtnLugar.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -288,7 +288,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
                 BtnLugarActionPerformed(evt);
             }
         });
-        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 920, 320, 80));
+        add(BtnLugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1510, 960, 320, 80));
 
         LblMarca.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         LblMarca.setText("Marca");
@@ -351,17 +351,17 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         persona.addPerson();
         persona.vehiculo=true;
         ////////////////
-        inicio.apellido=apellido;
-        inicio.cedula=cedula;
-        inicio.colorVehiculo= colorVehiculo;
-        inicio.marcaVehiculo=marcaVehiculo;
-        inicio.matricula=matricula;
-        inicio.nombre=nombre;
-        inicio.puesto=puesto;
-        inicio.seccion=seccion;
-        inicio.tipoDeVehiculo=tipoDeVehiculo;
-        inicio.horaEntrada=horaEntrada;
-        inicio.horaSalida=horaSalida;
+        Usuario.apellido=apellido;
+        Usuario.cedula=cedula;
+        Usuario.colorVehiculo= colorVehiculo;
+        Usuario.marcaVehiculo=marcaVehiculo;
+        Usuario.matricula=matricula;
+        Usuario.nombre=nombre;
+        Usuario.puesto=puesto;
+        Usuario.seccion=seccion;
+        Usuario.tipoDeVehiculo=tipoDeVehiculo;
+        Usuario.horaEntrada=horaEntrada;
+        Usuario.horaSalida=horaSalida;
     }
     
     
@@ -418,7 +418,12 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         }
         
         if (cedula.trim().length() == 0 || nombre.trim().length() == 0 || apellido.trim().length() == 0 || marcaVehiculo.trim().length() == 0 || colorVehiculo.trim().length() == 0){
-            JOptionPane.showMessageDialog(this, "Debe completar todos los campos");
+            //JOptionPane.showMessageDialog(this, "Debe completar todos los campos");
+            FaltaDeDatos falta = new FaltaDeDatos();
+            falta.setLocationRelativeTo(null);
+            falta.setResizable(false);
+            //falta.setUndecorated(false);
+            falta.setVisible(true);
             return;
         }
         Esta();

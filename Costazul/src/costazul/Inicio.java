@@ -29,38 +29,17 @@ public class Inicio extends javax.swing.JFrame {
     }
     RegistroPersonal registroPersonal = new RegistroPersonal(this);
     
-    public String nombre="";
-    public String apellido="";
-    public String cedula="";
-    public String matricula="";
-    public String tipoDeVehiculo="";
-    public String marcaVehiculo="";
-    public String colorVehiculo="";
-    public String horaEntrada="";
-    public String horaSalida="";
-    public char seccion=' ';
-    public int puesto=0;
-    public String Tienda="";
-    public String Encargado="";
-    public String producto1="";
-    public String producto2="";
-    public String producto3="";
-    public String totalPago="";
-    
-    
-    
     public void InicioEntrada(){
         System.out.println(new File(".").getAbsolutePath());
         Entrada entrada = new Entrada(this);
         PanelSetter(entrada);
     }
     
-    
-    
     public void InicioEsta(){
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this, registroPersonal);
         PanelSetter(inicioEsta);
     }
+    
     
     public void volverEsta(){
         InicioEstacionamiento inicioEsta = new InicioEstacionamiento(this, registroPersonal);
@@ -72,24 +51,11 @@ public class Inicio extends javax.swing.JFrame {
     public void InicioCompraPago(){
         //Este metodo es algo distinto, aca mandamos la informacion del usuario para que este de una vez en la pantalla de pago
         PantallaCompraPago InicioCompra = new PantallaCompraPago(this);
-        InicioCompra.apellido=apellido;
-        InicioCompra.cedula=cedula;
-        InicioCompra.colorVehiculo=colorVehiculo;
-        InicioCompra.horaEntrada=horaEntrada;
-        InicioCompra.horaSalida=horaSalida;
-        InicioCompra.tipoDeVehiculo=tipoDeVehiculo;
-        InicioCompra.matricula=matricula;
-        InicioCompra.nombre= nombre;
-        InicioCompra.puesto=puesto;
-        InicioCompra.seccion=seccion;
-        InicioCompra.marcaVehiculo=marcaVehiculo;
-        InicioCompra.Tienda= Tienda;
-        InicioCompra.Encargado=Encargado;
-        InicioCompra.producto1=producto1;
-        InicioCompra.producto2=producto2;
-        InicioCompra.producto3=producto3;
-        InicioCompra.totalPago=totalPago;
         PanelSetter(InicioCompra);
+    }
+    public void InicioFinal(){
+        Final inicioEsta = new Final(this);
+        PanelSetter(inicioEsta);
     }
     
     public void IniciarInterfazTienda(){
@@ -100,7 +66,6 @@ public class Inicio extends javax.swing.JFrame {
         
         PanelSetter(registroPersonal);
     }
-    
     
     public void PanelSetter(JPanel panel){
         panel.setSize(1920, 1080);
@@ -113,7 +78,6 @@ public class Inicio extends javax.swing.JFrame {
         panel.setOpaque(false);
         setResizable(false);
     }
-    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

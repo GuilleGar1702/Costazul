@@ -5,6 +5,13 @@
  */
 package costazul;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 /**
@@ -17,24 +24,6 @@ public class PantallaCompraPago extends javax.swing.JPanel {
      * Creates new form PantallaCompraPago
      */
     
-
-    public String nombre="";
-    public String apellido="";
-    public String cedula="";
-    public String matricula="";
-    public String tipoDeVehiculo="";
-    public String marcaVehiculo="";
-    public String colorVehiculo="";
-    public String horaEntrada="";
-    public String horaSalida="";
-    public char seccion=' ';
-    public int puesto=0;
-    public String Tienda="";
-    public String Encargado="";
-    public String producto1="";
-    public String producto2="";
-    public String producto3="";
-    public String totalPago="";
     Inicio inicio;
     public PantallaCompraPago(Inicio inicio) {
         initComponents();
@@ -261,19 +250,35 @@ public class PantallaCompraPago extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    private void CrearArchivo(){
+        File registro = new File("./src/costazul/arbol/Compras.txt");
+            if (!registro.exists()) {
+                try {
+                    registro.createNewFile();
+                    System.out.println("se creo el archivo");
+                } catch (IOException ex) {
+                    Logger.getLogger(InicioEstacionamiento.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+    }
+    
+    
     public void cargarElementos(){
-        LblProducto1.setText(producto1+"$"); 
-        LblProducto2.setText(producto2+"$"); 
-        LblProducto3.setText(producto3+"$");
-        LblTienda.setText(Tienda);
-        LblEncargado.setText(Encargado);
-        LblTotal.setText("Total= "+totalPago+"$");
-        LblVehiculo.setText("Vehiculo: "+tipoDeVehiculo+" - "+marcaVehiculo);
-        LblMarca.setText("Matricula: "+matricula);
-        LblColor.setText("Color: "+colorVehiculo);
-        LblNombre.setText("Nombre: "+nombre);
-        LblApellido.setText("Apellido: "+apellido);
-        LblCedula.setText("Cedula: "+cedula);
+        
+        
+        LblProducto1.setText(Usuario.producto1+"$"); 
+        LblProducto2.setText(Usuario.producto2+"$"); 
+        LblProducto3.setText(Usuario.producto3+"$");
+        LblTienda.setText(Usuario.Tienda);
+        LblEncargado.setText(Usuario.Encargado);
+        LblTotal.setText("Total= "+Usuario.totalPago+"$");
+        LblVehiculo.setText("Vehiculo: "+Usuario.tipoDeVehiculo+" - "+Usuario.marcaVehiculo);
+        LblMarca.setText("Matricula: "+Usuario.matricula);
+        LblColor.setText("Color: "+Usuario.colorVehiculo);
+        LblNombre.setText("Nombre: "+Usuario.nombre);
+        LblApellido.setText("Apellido: "+Usuario.apellido);
+        LblCedula.setText("Cedula: "+Usuario.cedula);
     }
     
     private void BtnEntrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnEntrarMouseClicked
@@ -310,7 +315,15 @@ public class PantallaCompraPago extends javax.swing.JPanel {
     }//GEN-LAST:event_BtnPagosMouseClicked
 
     private void BtnPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPagosActionPerformed
-        JOptionPane.showMessageDialog(this, "Compra Realizada con exito! \n \n Somos Parque Costazul \n Gracias por preferirnos");   
+        try {
+            CrearArchivo();
+            String registro= Usuario.nombre+"-"+Usuario.apellido+"-"+Usuario.cedula+"-"+Usuario.colorVehiculo+"-"+Usuario.marcaVehiculo+"-"+Usuario.matricula+"-"+Usuario.horaEntrada+"-"+Usuario.horaSalida+"-"+Usuario.tipoDeVehiculo+"-"+Usuario.puesto+"-"+Usuario.seccion+"-"+Usuario.Tienda+"-"+Usuario.Encargado+"-"+Usuario.producto1+"-"+Usuario.producto2+"-"+Usuario.producto3+"-"+Usuario.totalPago+"\n";////////////////////////////////////////
+            Files.write(Paths.get("./src/costazul/arbol/Compras.txt"), registro.getBytes(), StandardOpenOption.APPEND);  
+            inicio.InicioFinal();
+            //JOptionPane.showMessageDialog(this, "Compra Realizada con exito! \n \n Somos Parque Costazul \n Gracias por preferirnos");
+        } catch (IOException ex) {
+            Logger.getLogger(PantallaCompraPago.class.getName()).log(Level.SEVERE, null, ex);
+        } 
     }//GEN-LAST:event_BtnPagosActionPerformed
 
     private void CBPagosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CBPagosActionPerformed

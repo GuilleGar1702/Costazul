@@ -193,7 +193,7 @@ public class RegistroPersonal extends javax.swing.JPanel {
                 BtnVolverActionPerformed(evt);
             }
         });
-        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(1280, 960, 230, 80));
+        add(BtnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 960, 230, 80));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/costazul/FondoRegistroPersonal.jpg"))); // NOI18N
         jLabel3.setText("jLabel2");
@@ -253,9 +253,9 @@ public class RegistroPersonal extends javax.swing.JPanel {
         apellido=TFApellido.getText();
         addPerson();
         
-        inicio.apellido=apellido;
-        inicio.nombre=nombre;
-        inicio.cedula=String.valueOf(cedula);
+        Usuario.apellido=apellido;
+        Usuario.nombre=nombre;
+        Usuario.cedula=String.valueOf(cedula);
         
         Tien();
     }//GEN-LAST:event_BtnRegistrarseActionPerformed
