@@ -18,6 +18,7 @@ import javax.swing.JPanel;
 public class Inicio extends javax.swing.JFrame {
     
     FondoTienda fondoTienda = new FondoTienda();
+    
     Fondo fondo = new Fondo();
     public Inicio() {
         this.setContentPane(fondo);
@@ -28,6 +29,7 @@ public class Inicio extends javax.swing.JFrame {
         //IniciarTiendas();
     }
     RegistroPersonal registroPersonal = new RegistroPersonal(this);
+    
     
     public void InicioEntrada(){
         System.out.println(new File(".").getAbsolutePath());
@@ -57,6 +59,7 @@ public class Inicio extends javax.swing.JFrame {
         Final inicioEsta = new Final(this);
         PanelSetter(inicioEsta);
     }
+    
     
     public void IniciarInterfazTienda(){
         InterfazTienda tiendasInter = new InterfazTienda(this);

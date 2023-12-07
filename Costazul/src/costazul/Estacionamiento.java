@@ -26,7 +26,7 @@ public class Estacionamiento extends javax.swing.JPanel {
     LocalDateTime dataTime =  LocalDateTime.now();
     DateTimeFormatter format = DateTimeFormatter.ofPattern("HH:mm");
     String entrada = dataTime.format(format);
-    private InicioEstacionamiento EstacionamientoInicio;
+    public InicioEstacionamiento EstacionamientoInicio;
     public Estacionamiento(InicioEstacionamiento EstacionamientoInicio) {
         initComponents();
         this.EstacionamientoInicio=EstacionamientoInicio;
@@ -190,7 +190,9 @@ public class Estacionamiento extends javax.swing.JPanel {
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
     }// </editor-fold>//GEN-END:initComponents
 
-    
+    private void puesto(){
+        EstacionamientoInicio.InicioPuesto();
+    }
     
     private void seccionAMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_seccionAMouseEntered
         ImageIcon icon = new ImageIcon("./src/costazul/visuals/rellenoaa.png");

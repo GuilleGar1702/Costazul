@@ -58,7 +58,7 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
         //ArbolVehiculos.borrar(10);
         //RefrescarEliminacion();
     }
-    
+    Estacionamiento Esta = new Estacionamiento(this);
     
     private void RefrescarEliminacion(){
         EliminarArchivo();
@@ -311,10 +311,15 @@ public class InicioEstacionamiento extends javax.swing.JPanel {
     
     //Le decimos al panel principal que pase a la siguienet pantalla
     public void Esta(){
-        Estacionamiento Esta = new Estacionamiento(this);
+        
         inicio.PanelSetter(Esta);
     }
-    
+    public void InicioPuesto(){
+        Puesto puesto = new Puesto(Esta);
+        puesto.setLocationRelativeTo(null);
+        puesto.setResizable(false);
+        puesto.setVisible(true);
+    }
     
     //creamos el archivo enc aso de no existir
     private void CrearArchivo(){
